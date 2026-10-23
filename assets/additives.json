@@ -384,6 +384,13 @@
       ]
     },
     {
+      "code": "E203",
+      "name": "Sorbinian wapnia",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E210",
       "name": "Kwas benzoesowy",
       "status": "restricted",
@@ -408,6 +415,13 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E213",
+      "name": "Benzoesan wapnia",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E220",
       "name": "Dwutlenek siarki",
       "status": "restricted",
@@ -415,11 +429,81 @@
       "source": "Rozporządzenia (WE) 1333/2008 i (UE) 1169/2011"
     },
     {
+      "code": "E221",
+      "name": "Siarczyn sodu",
+      "status": "restricted",
+      "note": "Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E222",
+      "name": "Wodorosiarczyn sodu",
+      "status": "restricted",
+      "note": "Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E223",
       "name": "Pirosiarczyn sodu",
       "status": "restricted",
       "note": "Siarczyny: limity wg kategorii; oznaczenie alergenu powyżej 10 mg/kg lub 10 mg/l.",
       "source": "Rozporządzenia (WE) 1333/2008 i (UE) 1169/2011"
+    },
+    {
+      "code": "E224",
+      "name": "Pirosiarczyn potasu",
+      "status": "restricted",
+      "note": "Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E226",
+      "name": "Siarczyn wapnia",
+      "status": "restricted",
+      "note": "Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E227",
+      "name": "Wodorosiarczyn wapnia",
+      "status": "restricted",
+      "note": "Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E228",
+      "name": "Wodorosiarczyn potasu",
+      "status": "restricted",
+      "note": "Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E234",
+      "name": "Nizyna",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E235",
+      "name": "Natamycyna (pimarycyna)",
+      "status": "restricted",
+      "note": "Dozwolona m.in. na powierzchni serów i kiełbas.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E239",
+      "name": "Heksametylenotetramina",
+      "status": "restricted",
+      "note": "Dozwolona tylko w wybranych produktach (np. ser provolone).",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E242",
+      "name": "Dimetylodwuwęglan",
+      "status": "restricted",
+      "note": "Dozwolony w napojach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E249",
@@ -450,11 +534,81 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E260",
+      "name": "Kwas octowy",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E261",
+      "name": "Octany potasu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E262",
+      "name": "Octany sodu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E263",
+      "name": "Octan wapnia",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E270",
       "name": "Kwas mlekowy",
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E280",
+      "name": "Kwas propionowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E281",
+      "name": "Propionian sodu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E282",
+      "name": "Propionian wapnia",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E283",
+      "name": "Propionian potasu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E284",
+      "name": "Kwas borowy",
+      "status": "restricted",
+      "note": "Dozwolony tylko w jajach jesiotra (kawior).",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E285",
+      "name": "Czteroboran sodu (boraks)",
+      "status": "restricted",
+      "note": "Dozwolony tylko w jajach jesiotra (kawior).",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E290",
@@ -469,6 +623,13 @@
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E297",
+      "name": "Kwas fumarowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E300",
