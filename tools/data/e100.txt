@@ -1,0 +1,32 @@
+E103|Alkanet|B
+E105|Żółcień stała AB|B
+E111|Pomarańcz GGN|B
+E121|Czerwień cytrusowa 2|B
+E123|Amarant|B|Wycofany z unijnej listy dozwolonych dodatków.
+E125|Ponceau SX|B
+E126|Ponceau 6R|B
+E127|Erytrozyna|R|Dozwolona tylko w wybranych produktach (np. wiśnie koktajlowe, kandyzowane).
+E128|Czerwień 2G|B|Wycofana z unijnej listy dozwolonych dodatków.
+E130|Indantren niebieski RS|B
+E131|Błękit patentowy V|R|Barwnik z limitami; wymaga ostrzeżenia na etykiecie zależnie od kategorii (sprawdź).
+E132|Indygotyna (karmin indygo)|R
+E133|Błękit brylantowy FCF|R
+E141|Kompleksy miedziowe chlorofili i chlorofiliny|R
+E142|Zieleń S|R
+E150a|Karmel zwykły|A|Karmel zwykły; zasady użycia zależą od kategorii żywności.
+E150b|Karmel siarczynowy|R
+E151|Czerń brylantowa BN|R
+E152|Czerń węglowa|B
+E153|Węgiel roślinny|R
+E155|Brąz HT|R
+E160b|Annato, bixyna, norbixyna|R|Barwnik naturalny z limitami zależnymi od kategorii.|annatto;annato
+E160d|Likopen|A|Barwnik naturalny; limity zależą od kategorii żywności.
+E160e|Beta-apo-8'-karotenal (C30)|R
+E161b|Luteina|A
+E161g|Kantaksantyna|R|Dozwolona tylko w nielicznych produktach.
+E170|Węglan wapnia|A
+E172|Tlenki i wodorotlenki żelaza|A
+E173|Glin|R|Dozwolony tylko do zewnętrznego powlekania wyrobów cukierniczych.
+E174|Srebro|R|Dozwolone tylko do zewnętrznego powlekania wyrobów cukierniczych i dekoracji.
+E175|Złoto|R|Dozwolone tylko do dekoracji i powlekania wyrobów cukierniczych.
+E180|Rubinopigment BK|R|Dozwolony tylko do znakowania skórki serów.

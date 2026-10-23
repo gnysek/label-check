@@ -1,0 +1,59 @@
+E400|Kwas alginowy|A
+E401|Alginian sodu|A
+E402|Alginian potasu|A
+E403|Alginian amonu|A
+E404|Alginian wapnia|A
+E405|Alginian glikolu propylenowego|R
+E407a|Przetworzone wodorosty Eucheuma|A
+E410|Mączka chleba świętojańskiego (guma szarańczynowa)|A|guma szarańczynowa;mączka z chleba świętojańskiego
+E413|Tragakanta|A
+E414|Guma arabska|A|guma akacjowa
+E416|Guma karaya|R
+E417|Guma tara|A
+E418|Guma gellan|A|gellan
+E421|Mannitol|R|Poliol; ostrzeżenie o działaniu przeczyszczającym przy dużej zawartości.
+E422|Glicerol|A|gliceryna;glicerol
+E425|Konjac (guma konjac, glukomannan)|R|Zakaz stosowania w galaretkowych słodyczach w minikubkach.|guma konjac;glukomannan
+E426|Hemiceluloza sojowa|R
+E427|Guma kasja|A
+E432|Polisorbat 20|R
+E433|Polisorbat 80|R
+E434|Polisorbat 40|R
+E435|Polisorbat 60|R
+E436|Polisorbat 65|R
+E442|Fosfatydy amonowe|R
+E444|Izomaślan octanu sacharozy|R
+E445|Estry glicerolu i żywic roślinnych|R
+E450|Difosforany|R
+E451|Trifosforany|R
+E452|Polifosforany|R
+E459|Beta-cyklodekstryna|R
+E460|Celuloza|A
+E461|Metyloceluloza|A
+E462|Etyloceluloza|R
+E463|Hydroksypropyloceluloza|A
+E464|Hydroksypropylometyloceluloza|A
+E465|Etylometyloceluloza|A
+E468|Usieciowana karboksymetyloceluloza|R
+E469|Karboksymetyloceluloza hydrolizowana enzymatycznie|R
+E470a|Sole sodowe, potasowe i wapniowe kwasów tłuszczowych|A
+E470b|Sole magnezowe kwasów tłuszczowych|A
+E472a|Estry kwasu octowego i mono- i diglicerydów kwasów tłuszczowych|A
+E472b|Estry kwasu mlekowego i mono- i diglicerydów kwasów tłuszczowych|A
+E472c|Estry kwasu cytrynowego i mono- i diglicerydów kwasów tłuszczowych|A
+E472d|Estry kwasu winowego i mono- i diglicerydów kwasów tłuszczowych|A
+E472e|Estry kwasu mono- i diacetylowinowego i mono- i diglicerydów kwasów tłuszczowych (DATEM)|A
+E472f|Mieszane estry kwasu octowego i winowego z mono- i diglicerydami|A
+E474|Sacharogliceryd|R
+E475|Estry poliglicerolu i kwasów tłuszczowych|R
+E476|Polirycynooleinian poliglicerolu (PGPR)|R
+E477|Estry glikolu propylenowego i kwasów tłuszczowych|R
+E479b|Oleje sojowe utlenione termicznie z mono- i diglicerydami|R
+E481|Stearoilomleczan sodu|R
+E482|Stearoilomleczan wapnia|R
+E483|Winian stearylu|R
+E491|Monostearynian sorbitanu|R
+E492|Tristearynian sorbitanu|R
+E493|Monolaurynian sorbitanu|R
+E494|Monooleinian sorbitanu|R
+E495|Monopalmitynian sorbitanu|R

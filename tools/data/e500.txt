@@ -1,0 +1,108 @@
+E501|Węglany potasu|A
+E504|Węglany magnezu|A
+E507|Kwas solny|A
+E508|Chlorek potasu|A
+E510|Chlorek amonu|R
+E511|Chlorek magnezu|A
+E512|Chlorek cyny(II)|R
+E513|Kwas siarkowy|A
+E514|Siarczany sodu|A
+E515|Siarczany potasu|A
+E516|Siarczan wapnia|A
+E517|Siarczan amonu|R
+E518|Siarczan magnezu|A
+E524|Wodorotlenek sodu|A
+E525|Wodorotlenek potasu|A
+E526|Wodorotlenek wapnia|A
+E527|Wodorotlenek amonu|A
+E528|Wodorotlenek magnezu|A
+E529|Tlenek wapnia|A
+E530|Tlenek magnezu|A
+E535|Ferrocyjanek sodu|R
+E536|Ferrocyjanek potasu|R
+E538|Ferrocyjanek wapnia|R
+E541|Fosforan sodowo-glinowy kwaśny|R
+E551|Dwutlenek krzemu|R|Substancja przeciwzbrylająca; limity zależne od kategorii.
+E552|Krzemian wapnia|R
+E553a|Krzemian magnezu (trójkrzemian magnezu)|R
+E553b|Talk|R
+E554|Krzemian sodowo-glinowy|R
+E555|Krzemian potasowo-glinowy|R
+E558|Bentonit|R
+E559|Krzemian glinu (kaolin)|R
+E570|Kwasy tłuszczowe|A
+E574|Kwas glukonowy|A
+E575|Glukonolakton|A
+E576|Glukonian sodu|A
+E577|Glukonian potasu|A
+E578|Glukonian wapnia|A
+E579|Glukonian żelaza|R
+E585|Mleczan żelaza|R
+E620|Kwas glutaminowy|R
+E622|Glutaminian monopotasowy|R
+E623|Diglutaminian wapnia|R
+E624|Glutaminian monoamonowy|R
+E625|Diglutaminian magnezu|R
+E626|Kwas guanylowy|R
+E627|Guanylan disodu|R
+E628|Guanylan dipotasu|R
+E629|Guanylan wapnia|R
+E630|Kwas inozynowy|R
+E631|Inozynian disodu|R
+E632|Inozynian dipotasu|R
+E633|Inozynian wapnia|R
+E634|5'-rybonukleotydy wapnia|R
+E635|5'-rybonukleotydy disodu|R
+E640|Glicyna i jej sól sodowa|R
+E650|Octan cynku|R
+E900|Dimetylopolisiloksan|R
+E901|Wosk pszczeli|R
+E902|Wosk kandelila|R
+E903|Wosk karnauba|R
+E904|Szelak|R
+E907|Poli-1-decen uwodorniony|R
+E912|Estry kwasu montanowego|R
+E914|Wosk polietylenowy utleniony|R
+E920|L-cysteina|R
+E927b|Karbamid (mocznik)|R
+E938|Argon|A
+E939|Hel|A
+E941|Azot|A
+E942|Podtlenek azotu|A
+E943a|Butan|A
+E943b|Izobutan|A
+E944|Propan|A
+E948|Tlen|A
+E949|Wodór|A
+E953|Izomalt|R|Poliol; ostrzeżenie o działaniu przeczyszczającym przy dużej zawartości.
+E957|Taumatyna|R
+E959|Neohesperydyna DC|R
+E961|Neotam|R
+E962|Sól aspartamu i acesulfamu|R|Na etykiecie: źródło fenyloalaniny.
+E965|Maltitol|R|Poliol; ostrzeżenie o działaniu przeczyszczającym przy dużej zawartości.
+E966|Laktitol|R|Poliol; ostrzeżenie o działaniu przeczyszczającym przy dużej zawartości.
+E968|Erytrytol|R
+E969|Advantam|R
+E999|Ekstrakt z kory mydłokrzewu (Quillaia)|R
+E1103|Inwertaza|A
+E1105|Lizozym|R|Pochodzi z jaj - alergen.
+E1200|Poliddekstroza|R
+E1201|Poliwinylopirolidon|R
+E1202|Poliwinylopolipirolidon|R
+E1204|Pullulan|R
+E1404|Skrobia utleniona|A|Skrobia modyfikowana.
+E1410|Fosforan monoskrobiowy|A|Skrobia modyfikowana.
+E1412|Fosforan diskrobiowy|A|Skrobia modyfikowana.
+E1413|Fosforan diskrobiowy fosforylowany|A|Skrobia modyfikowana.
+E1414|Acetylowany fosforan diskrobiowy|A|Skrobia modyfikowana.
+E1420|Skrobia acetylowana|A|Skrobia modyfikowana.
+E1422|Adypinian diskrobiowy acetylowany|A|Skrobia modyfikowana.
+E1440|Skrobia hydroksypropylowa|A|Skrobia modyfikowana.
+E1450|Oktenylobursztynian skrobiowo-sodowy|R|Skrobia modyfikowana.
+E1451|Skrobia utleniona acetylowana|A|Skrobia modyfikowana.
+E1452|Oktenylobursztynian skrobiowo-glinowy|R|Skrobia modyfikowana.
+E1505|Cytrynian trietylu|R
+E1518|Triacetyloglicerol (triacetyna)|R
+E1519|Alkohol benzylowy|R
+E1520|Glikol propylenowy|R
+E1521|Glikol polietylenowy|R

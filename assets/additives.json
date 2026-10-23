@@ -31,11 +31,25 @@
       "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
     },
     {
+      "code": "E103",
+      "name": "Alkanet",
+      "status": "banned",
+      "note": "Brak na unijnej liście dozwolonych dodatków do żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E104",
       "name": "Żółcień chinolinowa",
       "status": "restricted",
       "note": "Dozwolony barwnik z limitami. Wymagane ostrzeżenie o wpływie na aktywność i uwagę u dzieci.",
       "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+    },
+    {
+      "code": "E105",
+      "name": "Żółcień stała AB",
+      "status": "banned",
+      "note": "Brak na unijnej liście dozwolonych dodatków do żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E110",
@@ -45,11 +59,25 @@
       "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
     },
     {
+      "code": "E111",
+      "name": "Pomarańcz GGN",
+      "status": "banned",
+      "note": "Brak na unijnej liście dozwolonych dodatków do żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E120",
       "name": "Koszenila, kwas karminowy",
       "status": "restricted",
       "note": "Barwnik pochodzenia zwierzęcego (owady) - istotne dla wegetarian; limity zależne od kategorii.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E121",
+      "name": "Czerwień cytrusowa 2",
+      "status": "banned",
+      "note": "Brak na unijnej liście dozwolonych dodatków do żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E122",
@@ -59,11 +87,46 @@
       "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
     },
     {
+      "code": "E123",
+      "name": "Amarant",
+      "status": "banned",
+      "note": "Wycofany z unijnej listy dozwolonych dodatków.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E124",
       "name": "Czerwień koszenilowa A (Ponceau 4R)",
       "status": "restricted",
       "note": "Dozwolony barwnik z limitami. Wymagane ostrzeżenie o wpływie na aktywność i uwagę u dzieci.",
       "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+    },
+    {
+      "code": "E125",
+      "name": "Ponceau SX",
+      "status": "banned",
+      "note": "Brak na unijnej liście dozwolonych dodatków do żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E126",
+      "name": "Ponceau 6R",
+      "status": "banned",
+      "note": "Brak na unijnej liście dozwolonych dodatków do żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E127",
+      "name": "Erytrozyna",
+      "status": "restricted",
+      "note": "Dozwolona tylko w wybranych produktach (np. wiśnie koktajlowe, kandyzowane).",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E128",
+      "name": "Czerwień 2G",
+      "status": "banned",
+      "note": "Wycofana z unijnej listy dozwolonych dodatków.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E129",
@@ -73,11 +136,53 @@
       "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
     },
     {
+      "code": "E130",
+      "name": "Indantren niebieski RS",
+      "status": "banned",
+      "note": "Brak na unijnej liście dozwolonych dodatków do żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E131",
+      "name": "Błękit patentowy V",
+      "status": "restricted",
+      "note": "Barwnik z limitami; wymaga ostrzeżenia na etykiecie zależnie od kategorii (sprawdź).",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E132",
+      "name": "Indygotyna (karmin indygo)",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E133",
+      "name": "Błękit brylantowy FCF",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E140",
       "name": "Chlorofile i chlorofiliny",
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E141",
+      "name": "Kompleksy miedziowe chlorofili i chlorofiliny",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E142",
+      "name": "Zieleń S",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E150",
@@ -97,6 +202,13 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E150b",
+      "name": "Karmel siarczynowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E150c",
       "name": "Karmel amoniakalny",
       "status": "restricted",
@@ -111,6 +223,34 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E151",
+      "name": "Czerń brylantowa BN",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E152",
+      "name": "Czerń węglowa",
+      "status": "banned",
+      "note": "Brak na unijnej liście dozwolonych dodatków do żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E153",
+      "name": "Węgiel roślinny",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E155",
+      "name": "Brąz HT",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E160a",
       "name": "Karoteny",
       "status": "allowed",
@@ -118,11 +258,50 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E160b",
+      "name": "Annato, bixyna, norbixyna",
+      "status": "restricted",
+      "note": "Barwnik naturalny z limitami zależnymi od kategorii.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)",
+      "aliases": [
+        "annatto",
+        "annato"
+      ]
+    },
+    {
       "code": "E160c",
       "name": "Ekstrakt z papryki",
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E160d",
+      "name": "Likopen",
+      "status": "allowed",
+      "note": "Barwnik naturalny; limity zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E160e",
+      "name": "Beta-apo-8'-karotenal (C30)",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E161b",
+      "name": "Luteina",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E161g",
+      "name": "Kantaksantyna",
+      "status": "restricted",
+      "note": "Dozwolona tylko w nielicznych produktach.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E162",
@@ -139,11 +318,53 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E170",
+      "name": "Węglan wapnia",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E171",
       "name": "Dwutlenek tytanu",
       "status": "banned",
       "note": "Wycofany z listy dozwolonych dodatków do żywności w UE (rozporządzenie (UE) 2022/63).",
       "source": "Rozporządzenie (UE) 2022/63"
+    },
+    {
+      "code": "E172",
+      "name": "Tlenki i wodorotlenki żelaza",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E173",
+      "name": "Glin",
+      "status": "restricted",
+      "note": "Dozwolony tylko do zewnętrznego powlekania wyrobów cukierniczych.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E174",
+      "name": "Srebro",
+      "status": "restricted",
+      "note": "Dozwolone tylko do zewnętrznego powlekania wyrobów cukierniczych i dekoracji.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E175",
+      "name": "Złoto",
+      "status": "restricted",
+      "note": "Dozwolone tylko do dekoracji i powlekania wyrobów cukierniczych.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E180",
+      "name": "Rubinopigment BK",
+      "status": "restricted",
+      "note": "Dozwolony tylko do znakowania skórki serów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E200",

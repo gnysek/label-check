@@ -1,0 +1,39 @@
+E301|Askorbinian sodu|A
+E302|Askorbinian wapnia|A
+E304|Estry kwasów tłuszczowych i kwasu askorbinowego (palmitynian askorbylu)|A
+E306|Ekstrakty bogate w tokoferole|A
+E307|Alfa-tokoferol|A
+E308|Gamma-tokoferol|A
+E309|Delta-tokoferol|A
+E310|Galusan propylu|R
+E311|Galusan oktylu|R
+E312|Galusan dodecylu|R
+E315|Kwas izoaskorbinowy (erytorbinowy)|R
+E316|Izoaskorbinian sodu (erytorbinian sodu)|R
+E319|TBHQ (tert-butylohydrochinon)|R
+E325|Mleczan sodu|A
+E326|Mleczan potasu|A
+E327|Mleczan wapnia|A
+E332|Cytryniany potasu|A
+E333|Cytryniany wapnia|A
+E334|Kwas winowy|A
+E335|Winiany sodu|A
+E336|Winiany potasu|A
+E337|Winian sodowo-potasowy|A
+E339|Fosforany sodu|R|Fosforany: limity zależne od kategorii; wysokie spożycie bywa przedmiotem ostrzeżeń zdrowotnych.
+E340|Fosforany potasu|R|Fosforany: limity zależne od kategorii.
+E341|Fosforany wapnia|R|Fosforany: limity zależne od kategorii.
+E343|Fosforany magnezu|R
+E350|Jabłczany sodu|A
+E351|Jabłczan potasu|A
+E352|Jabłczany wapnia|A
+E353|Kwas metawinowy|R
+E354|Winian wapnia|A
+E355|Kwas adypinowy|R
+E356|Adypinian sodu|R
+E357|Adypinian potasu|R
+E359|Adypinian amonu|R
+E363|Kwas bursztynowy|R
+E380|Cytrynian triamonowy|R
+E385|EDTA wapniowo-disodowy|R
+E392|Ekstrakty z rozmarynu|R

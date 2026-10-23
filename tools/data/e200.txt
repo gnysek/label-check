@@ -1,0 +1,23 @@
+E203|Sorbinian wapnia|R
+E213|Benzoesan wapnia|R
+E221|Siarczyn sodu|R|Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen.
+E222|Wodorosiarczyn sodu|R|Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen.
+E224|Pirosiarczyn potasu|R|Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen.
+E226|Siarczyn wapnia|R|Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen.
+E227|Wodorosiarczyn wapnia|R|Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen.
+E228|Wodorosiarczyn potasu|R|Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen.
+E234|Nizyna|R
+E235|Natamycyna (pimarycyna)|R|Dozwolona m.in. na powierzchni serów i kiełbas.
+E239|Heksametylenotetramina|R|Dozwolona tylko w wybranych produktach (np. ser provolone).
+E242|Dimetylodwuwęglan|R|Dozwolony w napojach do określonych limitów.
+E260|Kwas octowy|A
+E261|Octany potasu|A
+E262|Octany sodu|A
+E263|Octan wapnia|A
+E280|Kwas propionowy|R
+E281|Propionian sodu|R
+E282|Propionian wapnia|R
+E283|Propionian potasu|R
+E284|Kwas borowy|R|Dozwolony tylko w jajach jesiotra (kawior).
+E285|Czteroboran sodu (boraks)|R|Dozwolony tylko w jajach jesiotra (kawior).
+E297|Kwas fumarowy|R
