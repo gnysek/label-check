@@ -642,6 +642,97 @@
       ]
     },
     {
+      "code": "E301",
+      "name": "Askorbinian sodu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E302",
+      "name": "Askorbinian wapnia",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E304",
+      "name": "Estry kwasów tłuszczowych i kwasu askorbinowego (palmitynian askorbylu)",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E306",
+      "name": "Ekstrakty bogate w tokoferole",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E307",
+      "name": "Alfa-tokoferol",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E308",
+      "name": "Gamma-tokoferol",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E309",
+      "name": "Delta-tokoferol",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E310",
+      "name": "Galusan propylu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E311",
+      "name": "Galusan oktylu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E312",
+      "name": "Galusan dodecylu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E315",
+      "name": "Kwas izoaskorbinowy (erytorbinowy)",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E316",
+      "name": "Izoaskorbinian sodu (erytorbinian sodu)",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E319",
+      "name": "TBHQ (tert-butylohydrochinon)",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E320",
       "name": "BHA",
       "status": "restricted",
@@ -671,6 +762,27 @@
       ]
     },
     {
+      "code": "E325",
+      "name": "Mleczan sodu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E326",
+      "name": "Mleczan potasu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E327",
+      "name": "Mleczan wapnia",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E330",
       "name": "Kwas cytrynowy",
       "status": "allowed",
@@ -691,11 +803,172 @@
       ]
     },
     {
+      "code": "E332",
+      "name": "Cytryniany potasu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E333",
+      "name": "Cytryniany wapnia",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E334",
+      "name": "Kwas winowy",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E335",
+      "name": "Winiany sodu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E336",
+      "name": "Winiany potasu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E337",
+      "name": "Winian sodowo-potasowy",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E338",
       "name": "Kwas fosforowy",
       "status": "restricted",
       "note": "Dozwolony z limitami zależnymi od kategorii (fosforany).",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E339",
+      "name": "Fosforany sodu",
+      "status": "restricted",
+      "note": "Fosforany: limity zależne od kategorii; wysokie spożycie bywa przedmiotem ostrzeżeń zdrowotnych.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E340",
+      "name": "Fosforany potasu",
+      "status": "restricted",
+      "note": "Fosforany: limity zależne od kategorii.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E341",
+      "name": "Fosforany wapnia",
+      "status": "restricted",
+      "note": "Fosforany: limity zależne od kategorii.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E343",
+      "name": "Fosforany magnezu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E350",
+      "name": "Jabłczany sodu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E351",
+      "name": "Jabłczan potasu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E352",
+      "name": "Jabłczany wapnia",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E353",
+      "name": "Kwas metawinowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E354",
+      "name": "Winian wapnia",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E355",
+      "name": "Kwas adypinowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E356",
+      "name": "Adypinian sodu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E357",
+      "name": "Adypinian potasu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E359",
+      "name": "Adypinian amonu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E363",
+      "name": "Kwas bursztynowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E380",
+      "name": "Cytrynian triamonowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E385",
+      "name": "EDTA wapniowo-disodowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E392",
+      "name": "Ekstrakty z rozmarynu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E406",
