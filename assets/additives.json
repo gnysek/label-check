@@ -971,6 +971,48 @@
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
+      "code": "E400",
+      "name": "Kwas alginowy",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E401",
+      "name": "Alginian sodu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E402",
+      "name": "Alginian potasu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E403",
+      "name": "Alginian amonu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E404",
+      "name": "Alginian wapnia",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E405",
+      "name": "Alginian glikolu propylenowego",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E406",
       "name": "Agar",
       "status": "allowed",
@@ -985,11 +1027,39 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E407a",
+      "name": "Przetworzone wodorosty Eucheuma",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E410",
+      "name": "Mączka chleba świętojańskiego (guma szarańczynowa)",
+      "status": "allowed",
+      "note": "guma szarańczynowa;mączka z chleba świętojańskiego",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E412",
       "name": "Guma guar",
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E413",
+      "name": "Tragakanta",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E414",
+      "name": "Guma arabska",
+      "status": "allowed",
+      "note": "guma akacjowa",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E415",
@@ -999,6 +1069,27 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E416",
+      "name": "Guma karaya",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E417",
+      "name": "Guma tara",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E418",
+      "name": "Guma gellan",
+      "status": "allowed",
+      "note": "gellan",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E420",
       "name": "Sorbitol",
       "status": "restricted",
@@ -1006,11 +1097,176 @@
       "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
     },
     {
+      "code": "E421",
+      "name": "Mannitol",
+      "status": "restricted",
+      "note": "Poliol; ostrzeżenie o działaniu przeczyszczającym przy dużej zawartości.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E422",
+      "name": "Glicerol",
+      "status": "allowed",
+      "note": "gliceryna;glicerol",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E425",
+      "name": "Konjac (guma konjac, glukomannan)",
+      "status": "restricted",
+      "note": "Zakaz stosowania w galaretkowych słodyczach w minikubkach.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)",
+      "aliases": [
+        "guma konjac",
+        "glukomannan"
+      ]
+    },
+    {
+      "code": "E426",
+      "name": "Hemiceluloza sojowa",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E427",
+      "name": "Guma kasja",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E432",
+      "name": "Polisorbat 20",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E433",
+      "name": "Polisorbat 80",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E434",
+      "name": "Polisorbat 40",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E435",
+      "name": "Polisorbat 60",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E436",
+      "name": "Polisorbat 65",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E440",
       "name": "Pektyny",
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E442",
+      "name": "Fosfatydy amonowe",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E444",
+      "name": "Izomaślan octanu sacharozy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E445",
+      "name": "Estry glicerolu i żywic roślinnych",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E450",
+      "name": "Difosforany",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E451",
+      "name": "Trifosforany",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E452",
+      "name": "Polifosforany",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E459",
+      "name": "Beta-cyklodekstryna",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E460",
+      "name": "Celuloza",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E461",
+      "name": "Metyloceluloza",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E462",
+      "name": "Etyloceluloza",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E463",
+      "name": "Hydroksypropyloceluloza",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E464",
+      "name": "Hydroksypropylometyloceluloza",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E465",
+      "name": "Etylometyloceluloza",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E466",
@@ -1024,6 +1280,34 @@
       ]
     },
     {
+      "code": "E468",
+      "name": "Usieciowana karboksymetyloceluloza",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E469",
+      "name": "Karboksymetyloceluloza hydrolizowana enzymatycznie",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E470a",
+      "name": "Sole sodowe, potasowe i wapniowe kwasów tłuszczowych",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E470b",
+      "name": "Sole magnezowe kwasów tłuszczowych",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E471",
       "name": "Mono- i diglicerydy kwasów tłuszczowych",
       "status": "allowed",
@@ -1035,11 +1319,144 @@
       ]
     },
     {
+      "code": "E472a",
+      "name": "Estry kwasu octowego i mono- i diglicerydów kwasów tłuszczowych",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E472b",
+      "name": "Estry kwasu mlekowego i mono- i diglicerydów kwasów tłuszczowych",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E472c",
+      "name": "Estry kwasu cytrynowego i mono- i diglicerydów kwasów tłuszczowych",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E472d",
+      "name": "Estry kwasu winowego i mono- i diglicerydów kwasów tłuszczowych",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E472e",
+      "name": "Estry kwasu mono- i diacetylowinowego i mono- i diglicerydów kwasów tłuszczowych (DATEM)",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E472f",
+      "name": "Mieszane estry kwasu octowego i winowego z mono- i diglicerydami",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E473",
       "name": "Estry sacharozy i kwasów tłuszczowych",
       "status": "restricted",
       "note": "Emulgator dozwolony w wybranych kategoriach do określonych limitów.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E474",
+      "name": "Sacharogliceryd",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E475",
+      "name": "Estry poliglicerolu i kwasów tłuszczowych",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E476",
+      "name": "Polirycynooleinian poliglicerolu (PGPR)",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E477",
+      "name": "Estry glikolu propylenowego i kwasów tłuszczowych",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E479b",
+      "name": "Oleje sojowe utlenione termicznie z mono- i diglicerydami",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E481",
+      "name": "Stearoilomleczan sodu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E482",
+      "name": "Stearoilomleczan wapnia",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E483",
+      "name": "Winian stearylu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E491",
+      "name": "Monostearynian sorbitanu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E492",
+      "name": "Tristearynian sorbitanu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E493",
+      "name": "Monolaurynian sorbitanu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E494",
+      "name": "Monooleinian sorbitanu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E495",
+      "name": "Monopalmitynian sorbitanu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E500",
