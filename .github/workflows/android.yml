@@ -34,12 +34,12 @@ jobs:
       - run: flutter analyze
       - run: flutter test
 
-      # --no-shrink: R8 potrafi wywalić build przez brakujące klasy ML Kit
-      # (moduły rozpoznawania chińskiego/japońskiego itd.), a do testów nie jest potrzebny.
+      # Wersja debug do testów na telefonie. Build release wymaga reguł R8 dla ML Kit
+      # (brakujące klasy modułów chińskiego/japońskiego/koreańskiego/devanagari).
       - name: Build APK
         run: |
           set -o pipefail
-          flutter build apk --release --no-shrink 2>&1 | tee build.log
+          flutter build apk --debug 2>&1 | tee build.log
 
       # Przy błędzie wypisz koniec logu jako adnotację (widoczną w podsumowaniu przebiegu).
       - name: Report build errors
@@ -53,4 +53,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: label-check-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: build/app/outputs/flutter-apk/app-debug.apk
