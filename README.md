@@ -9,7 +9,8 @@ z wykrytymi numerami E.
 - [x] Zdjęcie / wybór z galerii, OCR, edytowalny tekst
 - [x] Parser składników (nawiasy, procenty, numery E, poprawki typowych pomyłek OCR)
 - [x] Testy parsera, workflow GitHub Actions budujący APK
-- [ ] Baza dodatków (rozporządzenie 1333/2008, EU Food Additives Database) i sprawdzanie E-numerów
+- [x] Mechanizm sprawdzania E-numerów (`assets/additives.json`, `lib/checker.dart`)
+- [ ] Pełna baza dodatków z EU Food Additives Database (obecnie tylko dane przykładowe, `meta.sample = true`)
 - [ ] Alergeny i reguły oznakowania (rozporządzenie 1169/2011)
 - [ ] Historia kontroli, eksport raportu do PDF, synchronizacja z backendem PHP
 - [ ] iOS (wymaga Maca z Xcode)

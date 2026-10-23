@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "sample": true,
+    "description": "DANE PRZYKŁADOWE do testów aplikacji. Zastąp pełnym importem z EU Food Additives Database / rozporządzenia (WE) nr 1333/2008 przed użyciem w kontroli.",
+    "regulation": "Rozporządzenie (WE) nr 1333/2008"
+  },
+  "additives": [
+    {
+      "code": "E102",
+      "name": "Tartrazyna",
+      "status": "restricted",
+      "note": "Dozwolony barwnik z limitami zależnymi od kategorii żywności. Wymagane ostrzeżenie na etykiecie o możliwym szkodliwym wpływie na aktywność i uwagę u dzieci.",
+      "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+    },
+    {
+      "code": "E104",
+      "name": "Żółcień chinolinowa",
+      "status": "restricted",
+      "note": "Dozwolony barwnik z limitami. Wymagane ostrzeżenie o wpływie na aktywność i uwagę u dzieci.",
+      "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+    },
+    {
+      "code": "E110",
+      "name": "Żółcień pomarańczowa FCF",
+      "status": "restricted",
+      "note": "Dozwolony barwnik z limitami. Wymagane ostrzeżenie o wpływie na aktywność i uwagę u dzieci.",
+      "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+    },
+    {
+      "code": "E122",
+      "name": "Azorubina (karmoizyna)",
+      "status": "restricted",
+      "note": "Dozwolony barwnik z limitami. Wymagane ostrzeżenie o wpływie na aktywność i uwagę u dzieci.",
+      "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+    },
+    {
+      "code": "E124",
+      "name": "Czerwień koszenilowa A (Ponceau 4R)",
+      "status": "restricted",
+      "note": "Dozwolony barwnik z limitami. Wymagane ostrzeżenie o wpływie na aktywność i uwagę u dzieci.",
+      "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+    },
+    {
+      "code": "E129",
+      "name": "Czerwień Allura AC",
+      "status": "restricted",
+      "note": "Dozwolony barwnik z limitami. Wymagane ostrzeżenie o wpływie na aktywność i uwagę u dzieci.",
+      "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+    },
+    {
+      "code": "E171",
+      "name": "Dwutlenek tytanu",
+      "status": "banned",
+      "note": "Wycofany z listy dozwolonych dodatków do żywności w UE (rozporządzenie (UE) 2022/63).",
+      "source": "Rozporządzenie (UE) 2022/63"
+    },
+    {
+      "code": "E211",
+      "name": "Benzoesan sodu",
+      "status": "restricted",
+      "note": "Konserwant dozwolony tylko w wybranych kategoriach żywności i do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E250",
+      "name": "Azotyn sodu",
+      "status": "restricted",
+      "note": "Konserwant dozwolony w wybranych kategoriach (np. produkty mięsne) do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E300",
+      "name": "Kwas askorbinowy",
+      "status": "allowed",
+      "note": "Przeciwutleniacz dozwolony powszechnie.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E330",
+      "name": "Kwas cytrynowy",
+      "status": "allowed",
+      "note": "Regulator kwasowości dozwolony powszechnie.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    }
+  ]
+}
