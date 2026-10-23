@@ -53,6 +53,18 @@ class AdditiveDatabase {
 
   int get length => _byCode.length;
 
+  /// Wszystkie wpisy posortowane po numerze E.
+  List<AdditiveInfo> get items {
+    int numberOf(String code) =>
+        int.tryParse(RegExp(r'\d+').firstMatch(code)?.group(0) ?? '') ?? 0;
+    final list = _byCode.values.toList();
+    list.sort((a, b) {
+      final byNumber = numberOf(a.code).compareTo(numberOf(b.code));
+      return byNumber != 0 ? byNumber : a.code.compareTo(b.code);
+    });
+    return list;
+  }
+
   /// "e 330" -> "E330", "E160A" -> "E160a".
   static String normalizeCode(String code) {
     final c = code.trim().replaceAll(RegExp(r'\s+'), '');

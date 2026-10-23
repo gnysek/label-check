@@ -32,3 +32,18 @@ class LabelChecker {
     );
   }
 }
+
+/// Najgorszy status na liście (zakaz > ograniczenia > brak w bazie > dozwolony).
+/// null, jeśli żaden składnik nie ma numeru E.
+AdditiveStatus? worstStatus(List<IngredientCheck> checks) {
+  const order = [
+    AdditiveStatus.banned,
+    AdditiveStatus.restricted,
+    AdditiveStatus.notFound,
+    AdditiveStatus.allowed,
+  ];
+  for (final s in order) {
+    if (checks.any((c) => c.status == s)) return s;
+  }
+  return null;
+}

@@ -3,7 +3,10 @@ import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart
 import 'package:image_picker/image_picker.dart';
 
 import '../additive_db.dart';
+import '../scan_store.dart';
 import '../theme.dart';
+import 'additives_screen.dart';
+import 'history_screen.dart';
 import 'result_screen.dart';
 
 /// Ekran startowy: zdjęcie etykiety -> OCR -> ekran wyniku.
@@ -16,6 +19,7 @@ class ScanScreen extends StatefulWidget {
 
 class _ScanScreenState extends State<ScanScreen> {
   final _picker = ImagePicker();
+  final _store = ScanStore();
   final _recognizer = TextRecognizer(script: TextRecognitionScript.latin);
   late final Future<AdditiveDatabase> _dbFuture;
   bool _busy = false;
@@ -61,7 +65,11 @@ class _ScanScreenState extends State<ScanScreen> {
       if (!mounted) return;
       await Navigator.of(context).push<void>(
         MaterialPageRoute<void>(
-          builder: (_) => ResultScreen(initialText: text, db: db),
+          builder: (_) => ResultScreen(
+            initialText: text,
+            db: db,
+            store: _store,
+          ),
         ),
       );
     } catch (e) {
@@ -69,9 +77,72 @@ class _ScanScreenState extends State<ScanScreen> {
     }
   }
 
+  Future<void> _openHistory() async {
+    try {
+      final db = await _dbFuture;
+      if (!mounted) return;
+      await Navigator.of(context).push<void>(
+        MaterialPageRoute<void>(
+          builder: (_) => HistoryScreen(store: _store, db: db),
+        ),
+      );
+    } catch (e) {
+      _showError('Nie udało się wczytać bazy dodatków: $e');
+    }
+  }
+
+  Future<void> _openAdditives() async {
+    try {
+      final db = await _dbFuture;
+      if (!mounted) return;
+      await Navigator.of(context).push<void>(
+        MaterialPageRoute<void>(builder: (_) => AdditivesScreen(db: db)),
+      );
+    } catch (e) {
+      _showError('Nie udało się wczytać bazy dodatków: $e');
+    }
+  }
+
+  Widget _buildDrawer() {
+    return Drawer(
+      child: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Padding(
+              padding: EdgeInsets.fromLTRB(20, 20, 20, 12),
+              child: Text(
+                'LabelCheck',
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700),
+              ),
+            ),
+            const Divider(),
+            ListTile(
+              leading: const Icon(Icons.history, color: AppColors.green),
+              title: const Text('Historia skanów'),
+              onTap: () {
+                Navigator.of(context).pop();
+                _openHistory();
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.list_alt, color: AppColors.green),
+              title: const Text('Baza dodatków'),
+              onTap: () {
+                Navigator.of(context).pop();
+                _openAdditives();
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: _buildDrawer(),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -144,11 +215,19 @@ class _Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.fromLTRB(20, 20, 20, 8),
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(8, 12, 20, 8),
       child: Row(
         children: [
-          DecoratedBox(
+          IconButton(
+            tooltip: 'Menu',
+            iconSize: 28,
+            color: AppColors.green,
+            onPressed: () => Scaffold.of(context).openDrawer(),
+            icon: const Icon(Icons.menu),
+          ),
+          const SizedBox(width: 4),
+          const DecoratedBox(
             decoration: BoxDecoration(
               color: AppColors.green,
               borderRadius: BorderRadius.all(Radius.circular(12)),
@@ -159,8 +238,8 @@ class _Header extends StatelessWidget {
               child: Icon(Icons.manage_search, color: Colors.white),
             ),
           ),
-          SizedBox(width: 10),
-          Text(
+          const SizedBox(width: 10),
+          const Text(
             'LabelCheck',
             style: TextStyle(
               fontSize: 22,

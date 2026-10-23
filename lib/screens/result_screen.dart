@@ -1,10 +1,15 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../additive_db.dart';
 import '../checker.dart';
 import '../ingredient_parser.dart';
+import '../scan_store.dart';
 import '../status_style.dart';
 import '../theme.dart';
+import '../widgets.dart';
+import 'history_screen.dart';
 
 /// Ekran wyniku: werdykt, liczniki, edytowalny tekst z OCR i lista składników.
 class ResultScreen extends StatefulWidget {
@@ -12,10 +17,16 @@ class ResultScreen extends StatefulWidget {
     super.key,
     required this.initialText,
     required this.db,
+    required this.store,
+    this.scanId,
   });
 
   final String initialText;
   final AdditiveDatabase db;
+  final ScanStore store;
+
+  /// Id zapisanego skanu (null = nowy skan, zostanie zapisany automatycznie).
+  final String? scanId;
 
   @override
   State<ResultScreen> createState() => _ResultScreenState();
@@ -25,18 +36,86 @@ class _ResultScreenState extends State<ResultScreen> {
   final _parser = const IngredientParser();
   late final TextEditingController _controller;
   List<IngredientCheck> _checks = const [];
+  String? _scanId;
+  Timer? _saveTimer;
+  Future<void> _saving = Future<void>.value();
 
   @override
   void initState() {
     super.initState();
+    _scanId = widget.scanId;
     _controller = TextEditingController(text: widget.initialText);
     _checks = _compute();
+    if (_scanId == null && widget.initialText.trim().isNotEmpty) {
+      _persist(widget.initialText);
+    }
   }
 
   @override
   void dispose() {
+    final pending = _saveTimer?.isActive ?? false;
+    _saveTimer?.cancel();
+    if (pending) _persist(_controller.text);
     _controller.dispose();
     super.dispose();
+  }
+
+  void _onTextChanged(String _) {
+    setState(() => _checks = _compute());
+    _saveTimer?.cancel();
+    final text = _controller.text;
+    _saveTimer = Timer(const Duration(milliseconds: 500), () => _persist(text));
+  }
+
+  /// Zapisy idą po kolei, żeby szybkie zmiany nie utworzyły dwóch wpisów.
+  void _persist(String text) {
+    _saving =
+        _saving.then((_) => _save(text)).catchError((Object _) {});
+  }
+
+  Future<void> _save(String text) async {
+    final id = _scanId;
+    if (id != null) {
+      await widget.store.updateText(id, text);
+    } else if (text.trim().isNotEmpty) {
+      final created = await widget.store.create(text);
+      _scanId = created.id;
+    }
+  }
+
+  Future<void> _confirmDelete() async {
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Usunąć skan z pamięci?'),
+        content: const Text('Tej operacji nie można cofnąć.'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: const Text('Anuluj'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: const Text('Usuń'),
+          ),
+        ],
+      ),
+    );
+    if (ok != true || !mounted) return;
+    _saveTimer?.cancel();
+    await _saving;
+    final id = _scanId;
+    if (id != null) await widget.store.delete(id);
+    if (!mounted) return;
+    Navigator.of(context).pop();
+  }
+
+  void _openHistory() {
+    Navigator.of(context).push<void>(
+      MaterialPageRoute<void>(
+        builder: (_) => HistoryScreen(store: widget.store, db: widget.db),
+      ),
+    );
   }
 
   List<IngredientCheck> _compute() =>
@@ -47,7 +126,16 @@ class _ResultScreenState extends State<ResultScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Wynik kontroli')),
+      appBar: AppBar(
+        title: const Text('Wynik kontroli'),
+        actions: [
+          IconButton(
+            tooltip: 'Usuń z pamięci',
+            icon: const Icon(Icons.delete_outline),
+            onPressed: _confirmDelete,
+          ),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(20, 4, 20, 20),
         children: [
@@ -61,13 +149,13 @@ class _ResultScreenState extends State<ResultScreen> {
           ),
           if (widget.db.isSample) ...[
             const SizedBox(height: 12),
-            const _SampleBanner(),
+            const SampleBanner(),
           ],
           const SizedBox(height: 12),
           _OcrTextCard(
             controller: _controller,
             startExpanded: widget.initialText.isEmpty,
-            onChanged: (_) => setState(() => _checks = _compute()),
+            onChanged: _onTextChanged,
           ),
           const SizedBox(height: 16),
           Text(
@@ -114,7 +202,7 @@ class _ResultScreenState extends State<ResultScreen> {
               Expanded(
                 flex: 7,
                 child: FilledButton(
-                  onPressed: null,
+                  onPressed: _openHistory,
                   style: FilledButton.styleFrom(
                     minimumSize: const Size.fromHeight(52),
                     shape: const RoundedRectangleBorder(
@@ -122,7 +210,7 @@ class _ResultScreenState extends State<ResultScreen> {
                     ),
                   ),
                   child: const Text(
-                    'Zapisz (wkrótce)',
+                    'Historia skanów',
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
                   ),
                 ),
@@ -377,39 +465,6 @@ class _CounterTile extends StatelessWidget {
                 height: 16 / 13,
                 fontWeight: FontWeight.w600,
                 color: s.fg,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _SampleBanner extends StatelessWidget {
-  const _SampleBanner();
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-      decoration: BoxDecoration(
-        color: const Color(0xFFFFF8E1),
-        border: Border.all(color: const Color(0xFFF0D58A)),
-        borderRadius: BorderRadius.circular(14),
-      ),
-      child: const Row(
-        children: [
-          Icon(Icons.info_outline, size: 22, color: Color(0xFF5C4400)),
-          SizedBox(width: 12),
-          Expanded(
-            child: Text(
-              'Dane przykładowe. Wynik nie może być podstawą decyzji '
-              'kontrolnej.',
-              style: TextStyle(
-                fontSize: 14,
-                height: 20 / 14,
-                color: Color(0xFF5C4400),
               ),
             ),
           ),
