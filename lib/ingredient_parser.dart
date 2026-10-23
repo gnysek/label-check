@@ -99,7 +99,7 @@ class IngredientParser {
       caseSensitive: false,
     ).firstMatch(text);
     if (footer != null) text = text.substring(0, footer.start);
-    final sentenceEnd = RegExp(r'\.(\s|$)').firstMatch(text);
+    final sentenceEnd = RegExp('\\.(?=[\\s"\'”*]|\$)').firstMatch(text);
     if (sentenceEnd != null) text = text.substring(0, sentenceEnd.start);
     text = text.replaceAll(RegExp(r'[.\s]+$'), '');
 

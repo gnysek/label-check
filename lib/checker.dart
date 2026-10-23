@@ -3,7 +3,8 @@ import 'ingredient_parser.dart';
 
 /// Wynik sprawdzenia jednego składnika.
 class IngredientCheck {
-  const IngredientCheck(this.ingredient, this.status, {this.info});
+  const IngredientCheck(this.ingredient, this.status,
+      {this.info, this.approximate = false});
 
   final Ingredient ingredient;
 
@@ -11,6 +12,9 @@ class IngredientCheck {
   final AdditiveStatus? status;
 
   final AdditiveInfo? info;
+
+  /// True, gdy dopasowano po nazwie z przybliżeniem (możliwa literówka OCR).
+  final bool approximate;
 }
 
 class LabelChecker {
@@ -25,9 +29,10 @@ class LabelChecker {
     final code = i.eNumber;
     if (code == null) {
       // Etykiety często podają nazwę ("cytryniany sodu") bez numeru E.
-      final byName = db.lookupByName(i.name);
-      if (byName == null) return IngredientCheck(i, null);
-      return IngredientCheck(i, byName.status, info: byName);
+      final m = db.matchByName(i.name);
+      if (m == null) return IngredientCheck(i, null);
+      return IngredientCheck(i, m.info.status,
+          info: m.info, approximate: !m.exact);
     }
     final info = db.lookup(code);
     return IngredientCheck(

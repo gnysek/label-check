@@ -619,6 +619,14 @@ class _IngredientCard extends StatelessWidget {
                       ),
                     ),
                   ),
+                if (check.approximate)
+                  const Padding(
+                    padding: EdgeInsets.only(top: 4),
+                    child: Text(
+                      'Dopasowano z przybliżeniem (możliwa literówka z OCR), sprawdź pisownię.',
+                      style: TextStyle(fontSize: 13, color: AppColors.muted),
+                    ),
+                  ),
                 if (i.percent != null)
                   Padding(
                     padding: const EdgeInsets.only(top: 4),

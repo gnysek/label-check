@@ -85,4 +85,23 @@ void main() {
     expect(koncentrat.percent, '6.97%');
     expect(koncentrat.name, 'koncentrat soku z czerwonych winogron');
   });
+
+  test('błędy OCR z prawdziwego zdjęcia: literówki, S01, cudzysłów po kropce', () {
+    final db = AdditiveDatabase.fromJsonString('''
+{"meta":{},"additives":[
+{"code":"E322","name":"Lecytyny","status":"allowed","source":"t","aliases":["lecytyny z soi"]},
+{"code":"E162","name":"Czerwień buraczana","status":"allowed","source":"t"},
+{"code":"E471","name":"Mono- i diglicerydy kwasów tłuszczowych","status":"allowed","source":"t"}
+]}''');
+    final c = LabelChecker(db).check(parser.parse(
+        'Składniki: woda, mono- i diglicerydy kwasów thuszczowych, lecytyny z S01, zerwień buraczana, trehaloza*, aromaty."Trehaloza jest źródłem glukozy.'));
+    expect(c.map((x) => x.ingredient.name).last, 'aromaty');
+    AdditiveInfo? info(String n) =>
+        c.firstWhere((x) => x.ingredient.name == n).info;
+    expect(info('lecytyny z S01')?.code, 'E322');
+    expect(info('zerwień buraczana')?.code, 'E162');
+    expect(info('mono- i diglicerydy kwasów thuszczowych')?.code, 'E471');
+    expect(c.firstWhere((x) => x.ingredient.name == 'zerwień buraczana').approximate, isTrue);
+    expect(c.firstWhere((x) => x.ingredient.name == 'lecytyny z S01').approximate, isFalse);
+  });
 }

@@ -104,11 +104,63 @@ class AdditiveDatabase {
       final i = from.indexOf(ch);
       b.write(i >= 0 ? to[i] : ch);
     }
-    return b.toString().replaceAll(RegExp(r'\s+'), ' ');
+    // OCR myli litery z cyframi (S01 -> SOI) - poprawiamy tylko w słowach z literami.
+    final fixed = b.toString().split(RegExp(r'\s+')).map((w) {
+      if (!RegExp(r'[a-z]').hasMatch(w)) return w;
+      return w
+          .replaceAll('0', 'o')
+          .replaceAll('1', 'i')
+          .replaceAll('5', 's');
+    });
+    return fixed.join(' ');
+  }
+
+  static int _distance(String a, String b) {
+    var prev = List<int>.generate(b.length + 1, (i) => i);
+    for (var i = 1; i <= a.length; i++) {
+      final cur = List<int>.filled(b.length + 1, 0)..[0] = i;
+      for (var j = 1; j <= b.length; j++) {
+        final cost = a[i - 1] == b[j - 1] ? 0 : 1;
+        final best = [prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost]
+            .reduce((x, y) => x < y ? x : y);
+        cur[j] = best;
+      }
+      prev = cur;
+    }
+    return prev[b.length];
   }
 
   /// Dodatek podany nazwą zamiast numeru E (np. "cytryniany sodu").
-  AdditiveInfo? lookupByName(String name) => _byName[normalizeName(name)];
+  AdditiveInfo? lookupByName(String name) => matchByName(name)?.info;
+
+  /// Dopasowanie po nazwie; `exact` = false, gdy użyto przybliżenia
+  /// (literówki z OCR, np. "zerwień buraczana").
+  ({AdditiveInfo info, bool exact})? matchByName(String name) {
+    final key = normalizeName(name);
+    final direct = _byName[key];
+    if (direct != null) return (info: direct, exact: true);
+    if (key.length < 7) return null;
+    final maxDist = key.length >= 14 ? 2 : 1;
+    var best = maxDist + 1;
+    final found = <AdditiveInfo>{};
+    for (final e in _byName.entries) {
+      if (e.key.length < 7 || (e.key.length - key.length).abs() > maxDist) {
+        continue;
+      }
+      final d = _distance(key, e.key);
+      if (d > maxDist) continue;
+      if (d < best) {
+        best = d;
+        found
+          ..clear()
+          ..add(e.value);
+      } else if (d == best) {
+        found.add(e.value);
+      }
+    }
+    if (found.length != 1) return null;
+    return (info: found.first, exact: false);
+  }
 
   factory AdditiveDatabase.fromJsonString(String source) {
     final data = jsonDecode(source) as Map<String, dynamic>;
