@@ -6,6 +6,9 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,6 +25,24 @@ jobs:
           channel: stable
           cache: true
 
+      # Stały klucz podpisu, żeby kolejne wersje aktualizowały aplikację na
+      # telefonie (bez odinstalowywania i utraty historii skanów).
+      - name: Restore debug keystore
+        id: keystore
+        uses: actions/cache@v4
+        with:
+          path: ~/.android/debug.keystore
+          key: debug-keystore-v1
+
+      - name: Create debug keystore if missing
+        if: steps.keystore.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/.android
+          keytool -genkeypair -keystore ~/.android/debug.keystore \
+            -storepass android -keypass android -alias androiddebugkey \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -dname "CN=Android Debug,O=Android,C=US"
+
       # Jeśli w repo nie ma jeszcze folderu android/, wygeneruj go.
       - name: Generate Android platform files
         run: |
@@ -29,8 +50,10 @@ jobs:
             flutter create . --platforms=android --project-name label_check --org pl.fableinside
           fi
           rm -f test/widget_test.dart
+          python3 tools/patch_android.py
 
       - run: flutter pub get
+
       - name: Analyze
         run: |
           set -o pipefail
@@ -41,12 +64,11 @@ jobs:
           set -o pipefail
           flutter test 2>&1 | tee test.log
 
-      # Wersja debug do testów na telefonie. Build release wymaga reguł R8 dla ML Kit
-      # (brakujące klasy modułów chińskiego/japońskiego/koreańskiego/devanagari).
+      # Jeden plik APK dla telefonów 64-bitowych (np. Samsung S24 FE).
       - name: Build APK
         run: |
           set -o pipefail
-          flutter build apk --debug 2>&1 | tee build.log
+          flutter build apk --release --target-platform android-arm64 --build-number=${{ github.run_number }} 2>&1 | tee build.log
 
       # Przy błędzie wypisz koniec logu jako adnotację (widoczną w podsumowaniu przebiegu).
       - name: Report build errors
@@ -60,4 +82,18 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: label-check-apk
-          path: build/app/outputs/flutter-apk/app-debug.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+
+      # Stały link do pobrania: Releases -> "latest" -> label-check.apk
+      - name: Publish release
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp build/app/outputs/flutter-apk/app-release.apk label-check.apk
+          gh release delete latest --yes --cleanup-tag --repo "${{ github.repository }}" || true
+          gh release create latest label-check.apk \
+            --repo "${{ github.repository }}" \
+            --target "${{ github.sha }}" \
+            --title "LabelCheck (najnowszy build)" \
+            --notes "Build nr ${{ github.run_number }}, commit ${GITHUB_SHA::7}. Pobierz label-check.apk i zainstaluj na telefonie."
