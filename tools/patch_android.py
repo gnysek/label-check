@@ -52,6 +52,15 @@ if "proguard-rules.pro" not in text:
     )
     path.write_text(text)
 
+# Szybszy build: równoległość i cache Gradle.
+props = pathlib.Path("android/gradle.properties")
+if props.exists():
+    t = props.read_text()
+    for line in ("org.gradle.parallel=true", "org.gradle.caching=true"):
+        if line not in t:
+            t += ("" if t.endswith("\n") else "\n") + line + "\n"
+    props.write_text(t)
+
 # Nazwa aplikacji na ekranie telefonu.
 manifest = app / "src/main/AndroidManifest.xml"
 if manifest.exists():
