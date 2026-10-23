@@ -1,10 +1,25 @@
 {
   "meta": {
     "sample": true,
-    "description": "DANE PRZYKŁADOWE do testów aplikacji. Zastąp pełnym importem z EU Food Additives Database / rozporządzenia (WE) nr 1333/2008 przed użyciem w kontroli.",
-    "regulation": "Rozporządzenie (WE) nr 1333/2008"
+    "description": "DANE ORIENTACYJNE (nie porada prawna). Statusy ogólne wg rozporządzenia (WE) nr 1333/2008; limity zależą od kategorii żywności - weryfikuj w bazie UE: ec.europa.eu/food/food-feed-portal/screen/food-additives/search",
+    "regulation": "Rozporządzenie (WE) nr 1333/2008",
+    "defaultPlNote": "brak odrębnych przepisów krajowych zmieniających zasady UE (rozporządzenie 1333/2008 obowiązuje bezpośrednio; NIK 2018 nie wskazał krajowych odstępstw). Sprawdź jednak wymagania jakościowe konkretnego produktu."
   },
   "additives": [
+    {
+      "code": "E100",
+      "name": "Kurkumina",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E101",
+      "name": "Ryboflawina (witamina B2)",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
     {
       "code": "E102",
       "name": "Tartrazyna",
@@ -25,6 +40,13 @@
       "status": "restricted",
       "note": "Dozwolony barwnik z limitami. Wymagane ostrzeżenie o wpływie na aktywność i uwagę u dzieci.",
       "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+    },
+    {
+      "code": "E120",
+      "name": "Koszenila, kwas karminowy",
+      "status": "restricted",
+      "note": "Barwnik pochodzenia zwierzęcego (owady) - istotne dla wegetarian; limity zależne od kategorii.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
       "code": "E122",
@@ -48,6 +70,62 @@
       "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
     },
     {
+      "code": "E140",
+      "name": "Chlorofile i chlorofiliny",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E150a",
+      "name": "Karmel zwykły",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E150c",
+      "name": "Karmel amoniakalny",
+      "status": "restricted",
+      "note": "Dozwolony, z limitami zależnymi od kategorii.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E150d",
+      "name": "Karmel siarczynowo-amoniakalny",
+      "status": "restricted",
+      "note": "Dozwolony, z limitami zależnymi od kategorii.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E160a",
+      "name": "Karoteny",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E160c",
+      "name": "Ekstrakt z papryki",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E162",
+      "name": "Czerwień buraczana",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E163",
+      "name": "Antocyjany",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
       "code": "E171",
       "name": "Dwutlenek tytanu",
       "status": "banned",
@@ -55,10 +133,59 @@
       "source": "Rozporządzenie (UE) 2022/63"
     },
     {
+      "code": "E200",
+      "name": "Kwas sorbowy",
+      "status": "restricted",
+      "note": "Konserwant dozwolony w wybranych kategoriach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E202",
+      "name": "Sorbinian potasu",
+      "status": "restricted",
+      "note": "Konserwant dozwolony w wybranych kategoriach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E210",
+      "name": "Kwas benzoesowy",
+      "status": "restricted",
+      "note": "Konserwant dozwolony w wybranych kategoriach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
       "code": "E211",
       "name": "Benzoesan sodu",
       "status": "restricted",
       "note": "Konserwant dozwolony tylko w wybranych kategoriach żywności i do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E212",
+      "name": "Benzoesan potasu",
+      "status": "restricted",
+      "note": "Konserwant dozwolony w wybranych kategoriach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E220",
+      "name": "Dwutlenek siarki",
+      "status": "restricted",
+      "note": "Siarczyny: powyżej 10 mg/kg lub 10 mg/l oznaczenie jako alergen na etykiecie (rozp. 1169/2011).",
+      "source": "Rozporządzenia (WE) 1333/2008 i (UE) 1169/2011"
+    },
+    {
+      "code": "E223",
+      "name": "Pirosiarczyn sodu",
+      "status": "restricted",
+      "note": "Siarczyny: limity wg kategorii; oznaczenie alergenu powyżej 10 mg/kg lub 10 mg/l.",
+      "source": "Rozporządzenia (WE) 1333/2008 i (UE) 1169/2011"
+    },
+    {
+      "code": "E249",
+      "name": "Azotyn potasu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych produktach mięsnych do określonych limitów.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
@@ -69,10 +196,59 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E251",
+      "name": "Azotan sodu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych produktach (np. mięsnych) do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E252",
+      "name": "Azotan potasu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych produktach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E270",
+      "name": "Kwas mlekowy",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E296",
+      "name": "Kwas jabłkowy",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
       "code": "E300",
       "name": "Kwas askorbinowy",
       "status": "allowed",
       "note": "Przeciwutleniacz dozwolony powszechnie.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E320",
+      "name": "BHA",
+      "status": "restricted",
+      "note": "Przeciwutleniacz dozwolony w wybranych kategoriach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E321",
+      "name": "BHT",
+      "status": "restricted",
+      "note": "Przeciwutleniacz dozwolony w wybranych kategoriach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E322",
+      "name": "Lecytyny",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
@@ -81,6 +257,118 @@
       "status": "allowed",
       "note": "Regulator kwasowości dozwolony powszechnie.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E331",
+      "name": "Cytryniany sodu",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E338",
+      "name": "Kwas fosforowy",
+      "status": "restricted",
+      "note": "Dozwolony z limitami zależnymi od kategorii (fosforany).",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E406",
+      "name": "Agar",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E407",
+      "name": "Karagen",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E412",
+      "name": "Guma guar",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E415",
+      "name": "Guma ksantanowa",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E420",
+      "name": "Sorbitol",
+      "status": "restricted",
+      "note": "Poliol; powyżej 10% w żywności: 'nadmierne spożycie może powodować efekty przeczyszczające'.",
+      "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+    },
+    {
+      "code": "E440",
+      "name": "Pektyny",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E500",
+      "name": "Węglany sodu",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E503",
+      "name": "Węglany amonu",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E509",
+      "name": "Chlorek wapnia",
+      "status": "allowed",
+      "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E621",
+      "name": "Glutaminian sodu",
+      "status": "restricted",
+      "note": "Wzmacniacz smaku dozwolony w wielu kategoriach z limitami (grupa glutaminianów).",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E950",
+      "name": "Acesulfam K",
+      "status": "restricted",
+      "note": "Słodzik dozwolony w wybranych kategoriach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E951",
+      "name": "Aspartam",
+      "status": "restricted",
+      "note": "Słodzik; na etykiecie: 'zawiera źródło fenyloalaniny'.",
+      "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+    },
+    {
+      "code": "E955",
+      "name": "Sukraloza",
+      "status": "restricted",
+      "note": "Słodzik dozwolony w wybranych kategoriach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E967",
+      "name": "Ksylitol",
+      "status": "restricted",
+      "note": "Poliol; powyżej 10%: ostrzeżenie o działaniu przeczyszczającym.",
+      "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
     }
   ]
 }

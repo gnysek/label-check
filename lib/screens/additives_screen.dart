@@ -66,6 +66,13 @@ class _AdditivesScreenState extends State<AdditivesScreen> {
                 style: const TextStyle(fontSize: 15, height: 22 / 15),
               ),
             ],
+            if (info.plNote != null) ...[
+              const SizedBox(height: 12),
+              Text(
+                'W Polsce: ${info.plNote!}',
+                style: const TextStyle(fontSize: 14, color: AppColors.muted),
+              ),
+            ],
             const SizedBox(height: 12),
             Text(
               'Podstawa: ${info.source}',

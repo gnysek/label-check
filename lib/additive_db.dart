@@ -24,6 +24,7 @@ class AdditiveInfo {
     required this.status,
     required this.source,
     this.note,
+    this.plNote,
   });
 
   final String code;
@@ -32,12 +33,18 @@ class AdditiveInfo {
   final String source;
   final String? note;
 
-  factory AdditiveInfo.fromJson(Map<String, dynamic> json) => AdditiveInfo(
+  /// Uwaga o stanie w Polsce (nadpisanie/uzupełnienie krajowe).
+  final String? plNote;
+
+  factory AdditiveInfo.fromJson(Map<String, dynamic> json,
+          {String? defaultPlNote}) =>
+      AdditiveInfo(
         code: json['code'] as String,
         name: json['name'] as String,
         status: AdditiveStatus.values.byName(json['status'] as String),
         source: json['source'] as String,
         note: json['note'] as String?,
+        plNote: (json['plNote'] as String?) ?? defaultPlNote,
       );
 }
 
@@ -77,9 +84,10 @@ class AdditiveDatabase {
 
   factory AdditiveDatabase.fromJsonString(String source) {
     final data = jsonDecode(source) as Map<String, dynamic>;
-    final items = (data['additives'] as List)
-        .map((e) => AdditiveInfo.fromJson(e as Map<String, dynamic>));
     final meta = data['meta'] as Map<String, dynamic>?;
+    final items = (data['additives'] as List).map((e) => AdditiveInfo.fromJson(
+        e as Map<String, dynamic>,
+        defaultPlNote: meta?['defaultPlNote'] as String?));
     return AdditiveDatabase(items, isSample: meta?['sample'] == true);
   }
 
