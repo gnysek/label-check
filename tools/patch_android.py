@@ -52,5 +52,11 @@ if "proguard-rules.pro" not in text:
     )
     path.write_text(text)
 
+# Nazwa aplikacji na ekranie telefonu.
+manifest = app / "src/main/AndroidManifest.xml"
+if manifest.exists():
+    m = manifest.read_text()
+    manifest.write_text(re.sub(r'android:label="[^"]*"', 'android:label="LabelCheck"', m, count=1))
+
 print(f"Zaktualizowano {path}:")
 print(text)

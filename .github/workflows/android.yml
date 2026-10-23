@@ -54,6 +54,11 @@ jobs:
 
       - run: flutter pub get
 
+      - name: Generate launcher icons
+        run: |
+          set -o pipefail
+          dart run flutter_launcher_icons 2>&1 | tee icons.log
+
       - name: Analyze
         run: |
           set -o pipefail
@@ -85,7 +90,7 @@ jobs:
       - name: Report build errors
         if: failure()
         run: |
-          msg=$( { grep -A12 "What went wrong" build.log; cat analyze.log test.log build.log | grep -iE "error|exception|failed|could not|missing|requires|minSdk|•|expected|actual|\[E\]" | tail -n 20; } 2>/dev/null | sed ':a;N;$!ba;s/\n/%0A/g' | cut -c1-6000)
+          msg=$( { grep -A12 "What went wrong" build.log; cat icons.log analyze.log test.log build.log | grep -iE "error|exception|failed|could not|missing|requires|minSdk|•|expected|actual|\[E\]" | tail -n 20; } 2>/dev/null | sed ':a;N;$!ba;s/\n/%0A/g' | cut -c1-6000)
           if [ -n "$msg" ]; then
             echo "::error title=Build log::${msg}"
           fi

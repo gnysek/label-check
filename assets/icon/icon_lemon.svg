@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#E8F5E9"/><g transform="translate(256 256) scale(0.9) translate(-249 -267)">
+<g transform="rotate(-24 230 270)">
+  <path d="M52 270c0-6 10-12 22-14 6-60 74-108 156-108s150 48 156 108c12 2 22 8 22 14s-10 12-22 14c-6 60-74 108-156 108S80 344 74 284c-12-2-22-8-22-14z" fill="#F7D84A" stroke="#C99A12" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M118 232c20-44 60-68 112-68" fill="none" stroke="#FFF3A8" stroke-width="16" stroke-linecap="round"/>
+</g>
+<path d="M232 128c26-44 64-52 96-40-12 34-48 54-96 40z" fill="#3F8F4E"/>
+<circle cx="300" cy="300" r="104" fill="#FFFFFF" fill-opacity="0.72" stroke="#1F4D3A" stroke-width="26"/>
+<path d="M376 376l70 70" stroke="#1F4D3A" stroke-width="38" stroke-linecap="round"/>
+<g fill="none" stroke="#1F4D3A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path d="M255.5 278H227.5V322H255.5M227.5 300H251.5M266.5 278H294.5V322H266.5M274.5 300H294.5"/><rect x="305.5" y="278" width="28" height="44" rx="9"/><rect x="344.5" y="278" width="28" height="44" rx="9"/></g>
+</g></svg>
