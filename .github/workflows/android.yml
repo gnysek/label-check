@@ -34,8 +34,21 @@ jobs:
       - run: flutter analyze
       - run: flutter test
 
+      # --no-shrink: R8 potrafi wywalić build przez brakujące klasy ML Kit
+      # (moduły rozpoznawania chińskiego/japońskiego itd.), a do testów nie jest potrzebny.
       - name: Build APK
-        run: flutter build apk --release
+        run: |
+          set -o pipefail
+          flutter build apk --release --no-shrink 2>&1 | tee build.log
+
+      # Przy błędzie wypisz koniec logu jako adnotację (widoczną w podsumowaniu przebiegu).
+      - name: Report build errors
+        if: failure()
+        run: |
+          if [ -f build.log ]; then
+            msg=$(grep -iE "error|exception|failed|wrong|could not|missing|requires|minSdk" build.log | tail -n 25 | sed ':a;N;$!ba;s/\n/%0A/g' | cut -c1-6000)
+            echo "::error title=Build log::${msg}"
+          fi
 
       - uses: actions/upload-artifact@v4
         with:
