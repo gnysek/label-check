@@ -85,7 +85,7 @@ jobs:
       - name: Report build errors
         if: failure()
         run: |
-          msg=$(cat analyze.log test.log build.log 2>/dev/null | grep -iE "error|exception|failed|wrong|could not|missing|requires|minSdk|•|expected|actual|\[E\]" | tail -n 30 | sed ':a;N;$!ba;s/\n/%0A/g' | cut -c1-6000)
+          msg=$( { grep -A12 "What went wrong" build.log; cat analyze.log test.log build.log | grep -iE "error|exception|failed|could not|missing|requires|minSdk|•|expected|actual|\[E\]" | tail -n 20; } 2>/dev/null | sed ':a;N;$!ba;s/\n/%0A/g' | cut -c1-6000)
           if [ -n "$msg" ]; then
             echo "::error title=Build log::${msg}"
           fi
