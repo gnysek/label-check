@@ -18,7 +18,10 @@
       "name": "Ryboflawina (witamina B2)",
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
-      "source": "Rozporządzenie (WE) nr 1333/2008"
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "witamina b2"
+      ]
     },
     {
       "code": "E102",
@@ -75,6 +78,16 @@
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E150",
+      "name": "Karmel (rodzaj nieokreślony)",
+      "status": "restricted",
+      "note": "Na etykiecie podano samo „karmel” bez rodzaju. Karmele E150a–d różnią się zasadami użycia (c i d mają limity); sprawdź rodzaj u producenta.",
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "karmel"
+      ]
     },
     {
       "code": "E150a",
@@ -144,7 +157,10 @@
       "name": "Sorbinian potasu",
       "status": "restricted",
       "note": "Konserwant dozwolony w wybranych kategoriach do określonych limitów.",
-      "source": "Rozporządzenie (WE) nr 1333/2008"
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "sorbinian potasu"
+      ]
     },
     {
       "code": "E210",
@@ -158,7 +174,10 @@
       "name": "Benzoesan sodu",
       "status": "restricted",
       "note": "Konserwant dozwolony tylko w wybranych kategoriach żywności i do określonych limitów.",
-      "source": "Rozporządzenie (WE) nr 1333/2008"
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "benzoesan sodu"
+      ]
     },
     {
       "code": "E212",
@@ -217,6 +236,13 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E290",
+      "name": "Dwutlenek węgla",
+      "status": "allowed",
+      "note": "Gaz dozwolony powszechnie (napoje gazowane).",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
       "code": "E296",
       "name": "Kwas jabłkowy",
       "status": "allowed",
@@ -228,7 +254,10 @@
       "name": "Kwas askorbinowy",
       "status": "allowed",
       "note": "Przeciwutleniacz dozwolony powszechnie.",
-      "source": "Rozporządzenie (WE) nr 1333/2008"
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "witamina c"
+      ]
     },
     {
       "code": "E320",
@@ -249,21 +278,32 @@
       "name": "Lecytyny",
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
-      "source": "Rozporządzenie (WE) nr 1333/2008"
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "lecytyna",
+        "lecytyna sojowa",
+        "lecytyna słonecznikowa"
+      ]
     },
     {
       "code": "E330",
       "name": "Kwas cytrynowy",
       "status": "allowed",
       "note": "Regulator kwasowości dozwolony powszechnie.",
-      "source": "Rozporządzenie (WE) nr 1333/2008"
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "kwas cytrynowy"
+      ]
     },
     {
       "code": "E331",
       "name": "Cytryniany sodu",
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
-      "source": "Rozporządzenie (WE) nr 1333/2008"
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "cytryniany sodu"
+      ]
     },
     {
       "code": "E338",
@@ -347,21 +387,56 @@
       "name": "Acesulfam K",
       "status": "restricted",
       "note": "Słodzik dozwolony w wybranych kategoriach do określonych limitów.",
-      "source": "Rozporządzenie (WE) nr 1333/2008"
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "acesulfam k",
+        "acesulfam potasu"
+      ]
     },
     {
       "code": "E951",
       "name": "Aspartam",
       "status": "restricted",
       "note": "Słodzik; na etykiecie: 'zawiera źródło fenyloalaniny'.",
-      "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+      "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V",
+      "aliases": [
+        "aspartam"
+      ]
+    },
+    {
+      "code": "E952",
+      "name": "Cyklaminiany",
+      "status": "restricted",
+      "note": "Słodzik dozwolony w wybranych kategoriach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E954",
+      "name": "Sacharyna",
+      "status": "restricted",
+      "note": "Słodzik dozwolony w wybranych kategoriach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
       "code": "E955",
       "name": "Sukraloza",
       "status": "restricted",
       "note": "Słodzik dozwolony w wybranych kategoriach do określonych limitów.",
-      "source": "Rozporządzenie (WE) nr 1333/2008"
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "sukraloza"
+      ]
+    },
+    {
+      "code": "E960",
+      "name": "Glikozydy stewiolowe",
+      "status": "restricted",
+      "note": "Słodzik dozwolony w wybranych kategoriach do określonych limitów.",
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "stewia",
+        "glikozydy stewiolowe ze stewii"
+      ]
     },
     {
       "code": "E967",

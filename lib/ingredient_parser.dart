@@ -4,6 +4,7 @@ class Ingredient {
     required this.name,
     this.eNumber,
     this.percent,
+    this.function,
   });
 
   /// Nazwa składnika po oczyszczeniu (np. "mąka pszenna").
@@ -15,18 +16,22 @@ class Ingredient {
   /// Podany na etykiecie udział procentowy (np. "12%"), jeśli był.
   final String? percent;
 
+  /// Funkcja technologiczna podana na etykiecie (np. "barwnik", "regulator kwasowości").
+  final String? function;
+
   @override
-  String toString() => 'Ingredient($name, e: $eNumber, %: $percent)';
+  String toString() => 'Ingredient($name, e: $eNumber, %: $percent, fn: $function)';
 
   @override
   bool operator ==(Object other) =>
       other is Ingredient &&
       other.name == name &&
       other.eNumber == eNumber &&
-      other.percent == percent;
+      other.percent == percent &&
+      other.function == function;
 
   @override
-  int get hashCode => Object.hash(name, eNumber, percent);
+  int get hashCode => Object.hash(name, eNumber, percent, function);
 }
 
 /// Parser tekstu z OCR listy składników.
@@ -35,6 +40,11 @@ class IngredientParser {
 
   static final RegExp _header = RegExp(
     r'^\s*(sk[łl]adniki|sk[łl]ad|ingredients)\s*[:\-]?\s*',
+    caseSensitive: false,
+  );
+
+  static final RegExp _headerAnywhere = RegExp(
+    r'sk[łl]adniki\s*:\s*',
     caseSensitive: false,
   );
 
@@ -68,7 +78,16 @@ class IngredientParser {
         .replaceAll(RegExp(r'\s+'), ' ')
         .trim();
 
-    text = text.replaceFirst(_header, '');
+    // Zdjęcie puszki/butelki obejmuje też opis produktu przed listą składników:
+    // bierzemy tekst po pierwszym "Składniki:" i kończymy na końcu zdania.
+    final anywhere = _headerAnywhere.firstMatch(text);
+    if (anywhere != null) {
+      text = text.substring(anywhere.end);
+    } else {
+      text = text.replaceFirst(_header, '');
+    }
+    final sentenceEnd = RegExp(r'\.(\s|$)').firstMatch(text);
+    if (sentenceEnd != null) text = text.substring(0, sentenceEnd.start);
     text = text.replaceAll(RegExp(r'[.\s]+$'), '');
 
     final parts = _splitTopLevel(text);
@@ -129,8 +148,21 @@ class IngredientParser {
 
     p = p.replaceAll(RegExp(r'\s+'), ' ').trim();
     p = p.replaceAll(RegExp(r'^[\-–•*\s]+|[\-–•*\s]+$'), '');
+
+    // "regulator kwasowości: kwas cytrynowy" -> funkcja + nazwa.
+    String? function;
+    final colon = p.indexOf(':');
+    if (colon > 0 && p.substring(0, colon).trim().split(' ').length <= 4) {
+      final before = p.substring(0, colon).trim();
+      final after = p.substring(colon + 1).trim();
+      if (after.isNotEmpty) {
+        function = before;
+        p = after;
+      }
+    }
     if (p.isEmpty) return null;
 
-    return Ingredient(name: p, eNumber: eNumber, percent: percent);
+    return Ingredient(
+        name: p, eNumber: eNumber, percent: percent, function: function);
   }
 }

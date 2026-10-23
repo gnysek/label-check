@@ -562,7 +562,7 @@ class _IngredientCard extends StatelessWidget {
     final info = check.info;
     final note = info?.note;
     final emphasised = status == AdditiveStatus.banned;
-    final code = i.eNumber;
+    final code = i.eNumber ?? info?.code;
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
