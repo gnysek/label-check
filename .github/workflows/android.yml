@@ -70,6 +70,17 @@ jobs:
           set -o pipefail
           flutter build apk --release --target-platform android-arm64 --build-number=${{ github.run_number }} 2>&1 | tee build.log
 
+      # Diagnostyka: czy R8 nadal zaciemnia kod i jak wygląda konfiguracja gradle.
+      - name: Report R8 status
+        if: always()
+        run: |
+          if [ -f build/app/outputs/mapping/release/mapping.txt ]; then
+            echo "::notice title=R8::mapping.txt istnieje, R8 nadal zaciemnia kod"
+          else
+            echo "::notice title=R8::brak mapping.txt, R8 wylaczony"
+          fi
+          grep -nE "minify|shrink|proguard" android/app/build.gradle* | tr '\n' ';' | sed 's/^/::notice title=gradle::/'
+
       # Przy błędzie wypisz koniec logu jako adnotację (widoczną w podsumowaniu przebiegu).
       - name: Report build errors
         if: failure()
