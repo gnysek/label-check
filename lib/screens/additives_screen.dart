@@ -120,6 +120,7 @@ class _AdditivesScreenState extends State<AdditivesScreen> {
                 _chip('Niedozwolone', AdditiveStatus.banned),
                 _chip('Z ograniczeniami', AdditiveStatus.restricted),
                 _chip('Dozwolone', AdditiveStatus.allowed),
+                _chip('Brak danych', AdditiveStatus.unverified),
               ],
             ),
           ),

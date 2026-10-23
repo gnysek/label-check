@@ -1,0 +1,52 @@
+E154|Brąz FK|U
+E161c|Kryptoksantyna|U
+E161d|Rubiksantyna|U
+E161e|Wiolaksantyna|U
+E161f|Rodoksantyna|U
+E160f|Ester etylowy kwasu beta-apo-8'-karotenowego (C30)|U
+E166|Sandał|U
+E201|Sorbinian sodu|U
+E214|p-hydroksybenzoesan etylu|U
+E215|Sól sodowa p-hydroksybenzoesanu etylu|U
+E216|p-hydroksybenzoesan propylu|U
+E217|Sól sodowa p-hydroksybenzoesanu propylu|U
+E218|p-hydroksybenzoesan metylu|U
+E219|Sól sodowa p-hydroksybenzoesanu metylu|U
+E230|Bifenyl (difenyl)|U
+E231|Ortofenylofenol|U
+E232|Ortofenylofenolan sodu|U
+E233|Tiabendazol|U
+E240|Formaldehyd|U
+E429|Pepton|U
+E430|Stearynian polioksyetylenu (8)|U
+E431|Stearynian polioksyetylenu (40)|U
+E520|Siarczan glinu|U
+E521|Siarczan glinowo-sodowy|U
+E522|Siarczan glinowo-potasowy|U
+E523|Siarczan glinowo-amonowy|U
+E542|Fosforan kostny|U
+E636|Maltol|U
+E637|Etylomaltol|U
+E641|L-leucyna|U
+E911|Ester metylowy kwasów tłuszczowych (sukcynylowany)|U
+E913|Lanolina|U
+E922|Nadsiarczan potasu|U
+E923|Nadsiarczan amonu|U
+E924a|Bromian potasu|U
+E924b|Bromian wapnia|U
+E925|Chlor|U
+E926|Dwutlenek chloru|U
+E928|Nadtlenek benzoilu|U
+E930|Nadtlenek wapnia|U
+E1000|Kwas cholowy|U
+E1100|Amylazy|U
+E1101|Proteazy|U
+E1102|Oksydaza glukozowa|U
+E1104|Lipazy|U
+E1400|Dekstryny prażone|U
+E1401|Skrobia traktowana kwasem|U
+E1402|Skrobia traktowana alkaliami|U
+E1403|Skrobia bielona|U
+E1405|Skrobia traktowana enzymami|U
+E1421|Skrobia acetylowana (octan winylu)|U
+E1517|Diacetyloglicerol|U

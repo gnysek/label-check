@@ -185,7 +185,7 @@ class _VerdictChip extends StatelessWidget {
     final label = switch (s) {
       AdditiveStatus.banned => 'Naruszenie',
       AdditiveStatus.restricted => 'Uwaga',
-      AdditiveStatus.notFound => 'Do weryfikacji',
+      AdditiveStatus.notFound || AdditiveStatus.unverified => 'Do weryfikacji',
       AdditiveStatus.allowed => 'Bez uwag',
       null => 'Brak E',
     };

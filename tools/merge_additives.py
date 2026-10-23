@@ -1,7 +1,7 @@
 """Dołącza partię dodatków z tools/data/*.txt do assets/additives.json.
 
 Format wiersza: KOD|Nazwa|A/R/B|[uwaga]|[alias;alias]
-A = dozwolony, R = dozwolony z ograniczeniami, B = brak na liście UE.
+A = dozwolony, R = z ograniczeniami, B = brak na liście UE, U = brak danych.
 Istniejące wpisy nie są nadpisywane. Statusy ogólne - nie zastępują bazy UE.
 """
 import json, re, sys, pathlib
@@ -9,9 +9,10 @@ import json, re, sys, pathlib
 NOTES = {
     "A": "Dozwolony; warunki użycia zależą od kategorii żywności.",
     "R": "Dozwolony w wybranych kategoriach lub z limitami.",
+    "U": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
     "B": "Brak na unijnej liście dozwolonych dodatków do żywności.",
 }
-STATUS = {"A": "allowed", "R": "restricted", "B": "banned"}
+STATUS = {"A": "allowed", "R": "restricted", "B": "banned", "U": "unverified"}
 path = pathlib.Path("assets/additives.json")
 d = json.loads(path.read_text(encoding="utf-8"))
 have = {a["code"] for a in d["additives"]}

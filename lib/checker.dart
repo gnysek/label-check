@@ -45,6 +45,7 @@ AdditiveStatus? worstStatus(List<IngredientCheck> checks) {
     AdditiveStatus.banned,
     AdditiveStatus.restricted,
     AdditiveStatus.notFound,
+    AdditiveStatus.unverified,
     AdditiveStatus.allowed,
   ];
   for (final s in order) {

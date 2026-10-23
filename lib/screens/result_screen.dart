@@ -121,7 +121,10 @@ class _ResultScreenState extends State<ResultScreen> {
   List<IngredientCheck> _compute() =>
       LabelChecker(widget.db).check(_parser.parse(_controller.text));
 
-  int _count(AdditiveStatus s) => _checks.where((c) => c.status == s).length;
+  int _count(AdditiveStatus s) => _checks
+      .where((c) => c.status == s ||
+          (s == AdditiveStatus.notFound && c.status == AdditiveStatus.unverified))
+      .length;
 
   @override
   Widget build(BuildContext context) {
@@ -240,8 +243,10 @@ class _Verdict {
 }
 
 _Verdict _verdict(List<IngredientCheck> checks) {
-  List<IngredientCheck> byStatus(AdditiveStatus s) =>
-      checks.where((c) => c.status == s).toList();
+  List<IngredientCheck> byStatus(AdditiveStatus s) => checks
+      .where((c) => c.status == s ||
+          (s == AdditiveStatus.notFound && c.status == AdditiveStatus.unverified))
+      .toList();
   String names(List<IngredientCheck> list) =>
       list.map((c) => c.ingredient.eNumber ?? c.ingredient.name).join(', ');
 

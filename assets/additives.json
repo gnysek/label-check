@@ -244,6 +244,13 @@
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
+      "code": "E154",
+      "name": "Brąz FK",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E155",
       "name": "Brąz HT",
       "status": "restricted",
@@ -290,10 +297,45 @@
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
+      "code": "E160f",
+      "name": "Ester etylowy kwasu beta-apo-8'-karotenowego (C30)",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E161b",
       "name": "Luteina",
       "status": "allowed",
       "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E161c",
+      "name": "Kryptoksantyna",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E161d",
+      "name": "Rubiksantyna",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E161e",
+      "name": "Wiolaksantyna",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E161f",
+      "name": "Rodoksantyna",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
@@ -316,6 +358,13 @@
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E166",
+      "name": "Sandał",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E170",
@@ -374,6 +423,13 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E201",
+      "name": "Sorbinian sodu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E202",
       "name": "Sorbinian potasu",
       "status": "restricted",
@@ -419,6 +475,48 @@
       "name": "Benzoesan wapnia",
       "status": "restricted",
       "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E214",
+      "name": "p-hydroksybenzoesan etylu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E215",
+      "name": "Sól sodowa p-hydroksybenzoesanu etylu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E216",
+      "name": "p-hydroksybenzoesan propylu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E217",
+      "name": "Sól sodowa p-hydroksybenzoesanu propylu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E218",
+      "name": "p-hydroksybenzoesan metylu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E219",
+      "name": "Sól sodowa p-hydroksybenzoesanu metylu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
@@ -478,6 +576,34 @@
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
+      "code": "E230",
+      "name": "Bifenyl (difenyl)",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E231",
+      "name": "Ortofenylofenol",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E232",
+      "name": "Ortofenylofenolan sodu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E233",
+      "name": "Tiabendazol",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E234",
       "name": "Nizyna",
       "status": "restricted",
@@ -496,6 +622,13 @@
       "name": "Heksametylenotetramina",
       "status": "restricted",
       "note": "Dozwolona tylko w wybranych produktach (np. ser provolone).",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E240",
+      "name": "Formaldehyd",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
@@ -1136,6 +1269,27 @@
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
+      "code": "E429",
+      "name": "Pepton",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E430",
+      "name": "Stearynian polioksyetylenu (8)",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E431",
+      "name": "Stearynian polioksyetylenu (40)",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E432",
       "name": "Polisorbat 20",
       "status": "restricted",
@@ -1571,6 +1725,34 @@
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
+      "code": "E520",
+      "name": "Siarczan glinu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E521",
+      "name": "Siarczan glinowo-sodowy",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E522",
+      "name": "Siarczan glinowo-potasowy",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E523",
+      "name": "Siarczan glinowo-amonowy",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E524",
       "name": "Wodorotlenek sodu",
       "status": "allowed",
@@ -1645,6 +1827,13 @@
       "name": "Fosforan sodowo-glinowy kwaśny",
       "status": "restricted",
       "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E542",
+      "name": "Fosforan kostny",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
@@ -1872,10 +2061,31 @@
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
+      "code": "E636",
+      "name": "Maltol",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E637",
+      "name": "Etylomaltol",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E640",
       "name": "Glicyna i jej sól sodowa",
       "status": "restricted",
       "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E641",
+      "name": "L-leucyna",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
@@ -1928,10 +2138,24 @@
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
+      "code": "E911",
+      "name": "Ester metylowy kwasów tłuszczowych (sukcynylowany)",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E912",
       "name": "Estry kwasu montanowego",
       "status": "restricted",
       "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E913",
+      "name": "Lanolina",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
@@ -1949,10 +2173,66 @@
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
+      "code": "E922",
+      "name": "Nadsiarczan potasu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E923",
+      "name": "Nadsiarczan amonu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E924a",
+      "name": "Bromian potasu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E924b",
+      "name": "Bromian wapnia",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E925",
+      "name": "Chlor",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E926",
+      "name": "Dwutlenek chloru",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E927b",
       "name": "Karbamid (mocznik)",
       "status": "restricted",
       "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E928",
+      "name": "Nadtlenek benzoilu",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E930",
+      "name": "Nadtlenek wapnia",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
@@ -2152,10 +2432,45 @@
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
+      "code": "E1000",
+      "name": "Kwas cholowy",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1100",
+      "name": "Amylazy",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1101",
+      "name": "Proteazy",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1102",
+      "name": "Oksydaza glukozowa",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E1103",
       "name": "Inwertaza",
       "status": "allowed",
       "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1104",
+      "name": "Lipazy",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
@@ -2194,10 +2509,45 @@
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
+      "code": "E1400",
+      "name": "Dekstryny prażone",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1401",
+      "name": "Skrobia traktowana kwasem",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1402",
+      "name": "Skrobia traktowana alkaliami",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1403",
+      "name": "Skrobia bielona",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E1404",
       "name": "Skrobia utleniona",
       "status": "allowed",
       "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1405",
+      "name": "Skrobia traktowana enzymami",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
@@ -2233,6 +2583,13 @@
       "name": "Skrobia acetylowana",
       "status": "allowed",
       "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1421",
+      "name": "Skrobia acetylowana (octan winylu)",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
@@ -2282,6 +2639,13 @@
       "name": "Cytrynian trietylu",
       "status": "restricted",
       "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1517",
+      "name": "Diacetyloglicerol",
+      "status": "unverified",
+      "note": "Brak danych: numer znany, ale nie mam potwierdzonego statusu w UE. Zweryfikuj w bazie UE.",
       "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {

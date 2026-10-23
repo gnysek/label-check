@@ -15,6 +15,9 @@ enum AdditiveStatus {
 
   /// Brak w bazie: wymaga ręcznej weryfikacji.
   notFound,
+
+  /// Numer jest w bazie, ale bez potwierdzonego statusu (brak danych).
+  unverified,
 }
 
 class AdditiveInfo {

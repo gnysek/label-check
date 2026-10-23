@@ -45,6 +45,14 @@ StatusStyle styleFor(AdditiveStatus status) {
         icon: Icons.check_circle_outline,
         label: 'Dozwolony',
       );
+    case AdditiveStatus.unverified:
+      return const StatusStyle(
+        fg: Color(0xFF475569),
+        bg: Color(0xFFEEF1F4),
+        border: Color(0xFFC7CED6),
+        icon: Icons.help_outline,
+        label: 'Brak danych, niezweryfikowany',
+      );
     case AdditiveStatus.notFound:
       return const StatusStyle(
         fg: Color(0xFF475569),
