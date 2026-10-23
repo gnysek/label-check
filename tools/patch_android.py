@@ -24,7 +24,7 @@ if kts.exists():
     extra = [
         "isMinifyEnabled = false",
         "isShrinkResources = false",
-        'proguardFiles(getDefaultProguardFile("proguard-android.txt"), '
+        'proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), '
         '"proguard-rules.pro")',
     ]
 elif groovy.exists():
@@ -33,7 +33,7 @@ elif groovy.exists():
     extra = [
         "minifyEnabled false",
         "shrinkResources false",
-        "proguardFiles getDefaultProguardFile('proguard-android.txt'), "
+        "proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), "
         "'proguard-rules.pro'",
     ]
 else:
