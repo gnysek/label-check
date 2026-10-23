@@ -282,7 +282,10 @@
       "aliases": [
         "lecytyna",
         "lecytyna sojowa",
-        "lecytyna słonecznikowa"
+        "lecytyna słonecznikowa",
+        "lecytyna z soi",
+        "lecytyny",
+        "lecytyny z soi"
       ]
     },
     {
@@ -352,6 +355,35 @@
       "name": "Pektyny",
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E466",
+      "name": "Karboksymetyloceluloza",
+      "status": "allowed",
+      "note": "Zagęstnik/stabilizator.",
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "guma celulozowa",
+        "sól sodowa karboksymetylocelulozy"
+      ]
+    },
+    {
+      "code": "E471",
+      "name": "Mono- i diglicerydy kwasów tłuszczowych",
+      "status": "allowed",
+      "note": "Emulgator dozwolony szeroko; warunki zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008",
+      "aliases": [
+        "diglicerydy kwasów tłuszczowych",
+        "monoglicerydy i diglicerydy kwasów tłuszczowych"
+      ]
+    },
+    {
+      "code": "E473",
+      "name": "Estry sacharozy i kwasów tłuszczowych",
+      "status": "restricted",
+      "note": "Emulgator dozwolony w wybranych kategoriach do określonych limitów.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
@@ -434,8 +466,8 @@
       "note": "Słodzik dozwolony w wybranych kategoriach do określonych limitów.",
       "source": "Rozporządzenie (WE) nr 1333/2008",
       "aliases": [
-        "stewia",
-        "glikozydy stewiolowe ze stewii"
+        "glikozydy stewiolowe ze stewii",
+        "stewia"
       ]
     },
     {
@@ -444,6 +476,13 @@
       "status": "restricted",
       "note": "Poliol; powyżej 10%: ostrzeżenie o działaniu przeczyszczającym.",
       "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
+    },
+    {
+      "code": "E1442",
+      "name": "Skrobia modyfikowana (fosforan diskrobiowy hydroksypropylowy)",
+      "status": "allowed",
+      "note": "Skrobia modyfikowana fizycznie/chemicznie. UWAGA: nie zweryfikowano pełnego tekstu przepisu dla kategorii 03 (lody jadalne) - potwierdź w bazie dodatków UE (kategoria 03, E1442).",
+      "source": "Rozporządzenie (WE) nr 1333/2008"
     }
   ]
 }

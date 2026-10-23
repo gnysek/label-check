@@ -106,14 +106,47 @@ class IngredientParser {
     final parts = _splitTopLevel(text);
     final result = <Ingredient>[];
     for (final part in parts) {
-      final ingredient = _parsePart(part);
-      if (ingredient != null) result.add(ingredient);
+      result.addAll(_parseExpanded(part));
     }
     return result;
   }
 
   /// Dzieli po przecinkach i średnikach, ale nie wewnątrz nawiasów
   /// (np. "czekolada (kakao, cukier)" zostaje jednym składnikiem).
+  static final RegExp _functionPrefix = RegExp(
+    r'^(emulgator|stabilizator|regulator|barwnik|konserwant|przeciwutleniacz|zag[ęe]szczacz|substancj|wzmacniacz|przeciwzbrylaj|[śs]rodek|[śs]rodki)[^(]{0,40}$',
+    caseSensitive: false,
+  );
+
+  /// "emulgatory (A, B)" -> osobne składniki A i B z funkcją "emulgatory".
+  List<Ingredient> _parseExpanded(String part, {String? function}) {
+    final p = part.trim();
+    final open = p.indexOf('(');
+    if (open > 0 && p.endsWith(')')) {
+      final prefix = p.substring(0, open).trim();
+      if (_functionPrefix.hasMatch(prefix)) {
+        final inner = p.substring(open + 1, p.length - 1);
+        return [
+          for (final c in _splitTopLevel(inner))
+            ..._parseExpanded(c, function: prefix),
+        ];
+      }
+    }
+    final ing = _parsePart(part);
+    if (ing == null) return [];
+    if (function != null && ing.function == null) {
+      return [
+        Ingredient(
+          name: ing.name,
+          eNumber: ing.eNumber,
+          percent: ing.percent,
+          function: function,
+        ),
+      ];
+    }
+    return [ing];
+  }
+
   List<String> _splitTopLevel(String text) {
     final parts = <String>[];
     final buffer = StringBuffer();
@@ -159,6 +192,7 @@ class IngredientParser {
       eNumber = 'E${em.group(1)}${suffix.toLowerCase()}';
     }
 
+    p = p.replaceAll(RegExp(r'\(\s*\)'), '');
     p = p.replaceAll(RegExp(r'\s+'), ' ').trim();
     p = p.replaceAll(RegExp(r'^[\-–•*\s]+|[\-–•*\s]+$'), '');
 

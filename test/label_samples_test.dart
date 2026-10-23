@@ -14,6 +14,11 @@ Napój energetyczny gazowany z tauryną i kofeiną o smaku granata i śliwki. Za
 Składniki: woda, dwutlenek węgla, regulatory kwasowości: kwas cytrynowy, cytryniany sodu; 0,4 % tauryna, aromaty, kofeina, koncentrat z marchwi czarnej, substancja słodząca: sukraloza; witaminy: niacyna, kwas pantotenowy, witamina B6, witamina B12. Najlepiej spożyć przed końcem: data i numer partii na spodzie puszki.
 ''';
 
+const _ice = '''
+PL Deser mrożony o smaku winogronowym 75 g. FRU CHI SOTI NATURAL.
+Składniki: woda, cukier, olej palmowy, mąka SOJOWA, koncentrat soku z czerwonych winogron (6,97%), olej kokosowy, syrop fruktozowy, maltodekstryna, enzymatycznie hydrolizowana mąka OWSIANA, skrobia modyfikowana (E 1442), emulgatory (mono- i diglicerydy kwasów tłuszczowych, estry sacharozy i kwasów tłuszczowych, lecytyny z SOI), stabilizatory (guma celulozowa, guma ksantanowa, karagen, guma guar), regulatory kwasowości (cytryniany sodu, kwas cytrynowy, kwas jabłkowy), barwniki (czerwień buraczana, antocyjany), proszek ze Spirulina platensis, olej słonecznikowy, trehaloza*, aromaty. *Trehaloza jest źródłem glukozy. Może zawierać: mleko, jaja. Najlepiej spożyć przed / Numer partii: nadruk na opakowaniu.
+''';
+
 const _json = '''
 {"meta":{"sample":true},"additives":[
 {"code":"E330","name":"Kwas cytrynowy","status":"allowed","source":"t"},
@@ -65,5 +70,19 @@ void main() {
         'Składniki: woda. cukier.kwas cytrynowy. cytryniany sodu, aromat. Najlepiej spożyć przed końcem: data');
     expect(r.map((i) => i.name),
         ['woda', 'cukier', 'kwas cytrynowy', 'cytryniany sodu', 'aromat']);
+  });
+
+  test('deser mrożony: grupy w nawiasach rozbijane na składniki, E 1442', () {
+    final r = parser.parse(_ice);
+    expect(r.length, 26);
+    expect(r.first.name, 'woda');
+    expect(r.last.name, 'aromaty');
+    final skrobia = r.firstWhere((i) => i.name.startsWith('skrobia'));
+    expect(skrobia.eNumber, 'E1442');
+    final guar = r.firstWhere((i) => i.name == 'guma guar');
+    expect(guar.function, 'stabilizatory');
+    final koncentrat = r.firstWhere((i) => i.name.startsWith('koncentrat'));
+    expect(koncentrat.percent, '6.97%');
+    expect(koncentrat.name, 'koncentrat soku z czerwonych winogron');
   });
 }
