@@ -86,11 +86,17 @@ class IngredientParser {
     final parts = <String>[];
     final buffer = StringBuffer();
     var depth = 0;
-    for (final rune in text.runes) {
-      final ch = String.fromCharCode(rune);
+    for (var i = 0; i < text.length; i++) {
+      final ch = text[i];
       if (ch == '(' || ch == '[') depth++;
       if ((ch == ')' || ch == ']') && depth > 0) depth--;
-      if ((ch == ',' || ch == ';') && depth == 0) {
+      // Przecinek dziesiętny ("62,5%") nie dzieli składników.
+      final isDecimalComma = ch == ',' &&
+          i > 0 &&
+          i < text.length - 1 &&
+          _isDigit(text[i - 1]) &&
+          _isDigit(text[i + 1]);
+      if ((ch == ',' || ch == ';') && depth == 0 && !isDecimalComma) {
         parts.add(buffer.toString());
         buffer.clear();
       } else {
@@ -100,6 +106,8 @@ class IngredientParser {
     parts.add(buffer.toString());
     return parts;
   }
+
+  static bool _isDigit(String c) => RegExp(r'\d').hasMatch(c);
 
   Ingredient? _parsePart(String part) {
     var p = part.trim();
