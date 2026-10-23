@@ -86,6 +86,19 @@ class IngredientParser {
     } else {
       text = text.replaceFirst(_header, '');
     }
+    // Rozmyte zdjęcie: OCR często czyta przecinek jako kropkę ("woda. cukier").
+    // Kropka po literze, po której zaczyna się mała litera lub cyfra, to
+    // przecinek; kropka przed wielką literą kończy listę.
+    text = text.replaceAllMapped(
+      RegExp(r'(?<=[a-ząćęłńóśźż])\.(?=\s*[a-ząćęłńóśźż0-9])'),
+      (_) => ',',
+    );
+    // Stopka nawet bez kropki lub z błędnie odczytaną wielkością liter.
+    final footer = RegExp(
+      r'najlepiej spo[żz]y[ćc]|przechowywa[ćc]|chroni[ćc] przed|data minimalnej|wyprodukowano|producent:',
+      caseSensitive: false,
+    ).firstMatch(text);
+    if (footer != null) text = text.substring(0, footer.start);
     final sentenceEnd = RegExp(r'\.(\s|$)').firstMatch(text);
     if (sentenceEnd != null) text = text.substring(0, sentenceEnd.start);
     text = text.replaceAll(RegExp(r'[.\s]+$'), '');

@@ -59,4 +59,11 @@ void main() {
         AdditiveStatus.restricted);
     expect(worstStatus(c), AdditiveStatus.restricted);
   });
+
+  test('rozmyte zdjęcie: kropki zamiast przecinków nie ucinają listy', () {
+    final r = parser.parse(
+        'Składniki: woda. cukier.kwas cytrynowy. cytryniany sodu, aromat. Najlepiej spożyć przed końcem: data');
+    expect(r.map((i) => i.name),
+        ['woda', 'cukier', 'kwas cytrynowy', 'cytryniany sodu', 'aromat']);
+  });
 }
