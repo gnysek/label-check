@@ -31,8 +31,15 @@ jobs:
           rm -f test/widget_test.dart
 
       - run: flutter pub get
-      - run: flutter analyze
-      - run: flutter test
+      - name: Analyze
+        run: |
+          set -o pipefail
+          flutter analyze 2>&1 | tee analyze.log
+
+      - name: Test
+        run: |
+          set -o pipefail
+          flutter test 2>&1 | tee test.log
 
       # Wersja debug do testów na telefonie. Build release wymaga reguł R8 dla ML Kit
       # (brakujące klasy modułów chińskiego/japońskiego/koreańskiego/devanagari).
@@ -45,8 +52,8 @@ jobs:
       - name: Report build errors
         if: failure()
         run: |
-          if [ -f build.log ]; then
-            msg=$(grep -iE "error|exception|failed|wrong|could not|missing|requires|minSdk" build.log | tail -n 25 | sed ':a;N;$!ba;s/\n/%0A/g' | cut -c1-6000)
+          msg=$(cat analyze.log test.log build.log 2>/dev/null | grep -iE "error|exception|failed|wrong|could not|missing|requires|minSdk|•|expected|actual|\[E\]" | tail -n 30 | sed ':a;N;$!ba;s/\n/%0A/g' | cut -c1-6000)
+          if [ -n "$msg" ]; then
             echo "::error title=Build log::${msg}"
           fi
 

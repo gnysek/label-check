@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'screens/scan_screen.dart';
+import 'theme.dart';
 
 void main() => runApp(const LabelCheckApp());
 
@@ -12,10 +13,7 @@ class LabelCheckApp extends StatelessWidget {
     return MaterialApp(
       title: 'LabelCheck',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorSchemeSeed: const Color(0xFF2E7D32),
-        useMaterial3: true,
-      ),
+      theme: buildTheme(),
       home: const ScanScreen(),
     );
   }
