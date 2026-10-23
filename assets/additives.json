@@ -1466,11 +1466,39 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E501",
+      "name": "Węglany potasu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E503",
       "name": "Węglany amonu",
       "status": "allowed",
       "note": "Dodatek o szerokim zastosowaniu; limity (jeśli są) zależą od kategorii żywności.",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E504",
+      "name": "Węglany magnezu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E507",
+      "name": "Kwas solny",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E508",
+      "name": "Chlorek potasu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E509",
@@ -1480,11 +1508,515 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E510",
+      "name": "Chlorek amonu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E511",
+      "name": "Chlorek magnezu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E512",
+      "name": "Chlorek cyny(II)",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E513",
+      "name": "Kwas siarkowy",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E514",
+      "name": "Siarczany sodu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E515",
+      "name": "Siarczany potasu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E516",
+      "name": "Siarczan wapnia",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E517",
+      "name": "Siarczan amonu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E518",
+      "name": "Siarczan magnezu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E524",
+      "name": "Wodorotlenek sodu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E525",
+      "name": "Wodorotlenek potasu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E526",
+      "name": "Wodorotlenek wapnia",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E527",
+      "name": "Wodorotlenek amonu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E528",
+      "name": "Wodorotlenek magnezu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E529",
+      "name": "Tlenek wapnia",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E530",
+      "name": "Tlenek magnezu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E535",
+      "name": "Ferrocyjanek sodu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E536",
+      "name": "Ferrocyjanek potasu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E538",
+      "name": "Ferrocyjanek wapnia",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E541",
+      "name": "Fosforan sodowo-glinowy kwaśny",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E551",
+      "name": "Dwutlenek krzemu",
+      "status": "restricted",
+      "note": "Substancja przeciwzbrylająca; limity zależne od kategorii.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E552",
+      "name": "Krzemian wapnia",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E553a",
+      "name": "Krzemian magnezu (trójkrzemian magnezu)",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E553b",
+      "name": "Talk",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E554",
+      "name": "Krzemian sodowo-glinowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E555",
+      "name": "Krzemian potasowo-glinowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E558",
+      "name": "Bentonit",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E559",
+      "name": "Krzemian glinu (kaolin)",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E570",
+      "name": "Kwasy tłuszczowe",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E574",
+      "name": "Kwas glukonowy",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E575",
+      "name": "Glukonolakton",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E576",
+      "name": "Glukonian sodu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E577",
+      "name": "Glukonian potasu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E578",
+      "name": "Glukonian wapnia",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E579",
+      "name": "Glukonian żelaza",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E585",
+      "name": "Mleczan żelaza",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E620",
+      "name": "Kwas glutaminowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E621",
       "name": "Glutaminian sodu",
       "status": "restricted",
       "note": "Wzmacniacz smaku dozwolony w wielu kategoriach z limitami (grupa glutaminianów).",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E622",
+      "name": "Glutaminian monopotasowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E623",
+      "name": "Diglutaminian wapnia",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E624",
+      "name": "Glutaminian monoamonowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E625",
+      "name": "Diglutaminian magnezu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E626",
+      "name": "Kwas guanylowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E627",
+      "name": "Guanylan disodu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E628",
+      "name": "Guanylan dipotasu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E629",
+      "name": "Guanylan wapnia",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E630",
+      "name": "Kwas inozynowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E631",
+      "name": "Inozynian disodu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E632",
+      "name": "Inozynian dipotasu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E633",
+      "name": "Inozynian wapnia",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E634",
+      "name": "5'-rybonukleotydy wapnia",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E635",
+      "name": "5'-rybonukleotydy disodu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E640",
+      "name": "Glicyna i jej sól sodowa",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E650",
+      "name": "Octan cynku",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E900",
+      "name": "Dimetylopolisiloksan",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E901",
+      "name": "Wosk pszczeli",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E902",
+      "name": "Wosk kandelila",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E903",
+      "name": "Wosk karnauba",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E904",
+      "name": "Szelak",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E907",
+      "name": "Poli-1-decen uwodorniony",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E912",
+      "name": "Estry kwasu montanowego",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E914",
+      "name": "Wosk polietylenowy utleniony",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E920",
+      "name": "L-cysteina",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E927b",
+      "name": "Karbamid (mocznik)",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E938",
+      "name": "Argon",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E939",
+      "name": "Hel",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E941",
+      "name": "Azot",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E942",
+      "name": "Podtlenek azotu",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E943a",
+      "name": "Butan",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E943b",
+      "name": "Izobutan",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E944",
+      "name": "Propan",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E948",
+      "name": "Tlen",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E949",
+      "name": "Wodór",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     },
     {
       "code": "E950",
@@ -1515,6 +2047,13 @@
       "source": "Rozporządzenie (WE) nr 1333/2008"
     },
     {
+      "code": "E953",
+      "name": "Izomalt",
+      "status": "restricted",
+      "note": "Poliol; ostrzeżenie o działaniu przeczyszczającym przy dużej zawartości.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E954",
       "name": "Sacharyna",
       "status": "restricted",
@@ -1532,6 +2071,20 @@
       ]
     },
     {
+      "code": "E957",
+      "name": "Taumatyna",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E959",
+      "name": "Neohesperydyna DC",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E960",
       "name": "Glikozydy stewiolowe",
       "status": "restricted",
@@ -1543,6 +2096,34 @@
       ]
     },
     {
+      "code": "E961",
+      "name": "Neotam",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E962",
+      "name": "Sól aspartamu i acesulfamu",
+      "status": "restricted",
+      "note": "Na etykiecie: źródło fenyloalaniny.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E965",
+      "name": "Maltitol",
+      "status": "restricted",
+      "note": "Poliol; ostrzeżenie o działaniu przeczyszczającym przy dużej zawartości.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E966",
+      "name": "Laktitol",
+      "status": "restricted",
+      "note": "Poliol; ostrzeżenie o działaniu przeczyszczającym przy dużej zawartości.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E967",
       "name": "Ksylitol",
       "status": "restricted",
@@ -1550,11 +2131,186 @@
       "source": "Rozporządzenie (WE) nr 1333/2008, załącznik V"
     },
     {
+      "code": "E968",
+      "name": "Erytrytol",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E969",
+      "name": "Advantam",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E999",
+      "name": "Ekstrakt z kory mydłokrzewu (Quillaia)",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1103",
+      "name": "Inwertaza",
+      "status": "allowed",
+      "note": "Dozwolony; warunki użycia zależą od kategorii żywności.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1105",
+      "name": "Lizozym",
+      "status": "restricted",
+      "note": "Pochodzi z jaj - alergen.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1200",
+      "name": "Poliddekstroza",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1201",
+      "name": "Poliwinylopirolidon",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1202",
+      "name": "Poliwinylopolipirolidon",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1204",
+      "name": "Pullulan",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1404",
+      "name": "Skrobia utleniona",
+      "status": "allowed",
+      "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1410",
+      "name": "Fosforan monoskrobiowy",
+      "status": "allowed",
+      "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1412",
+      "name": "Fosforan diskrobiowy",
+      "status": "allowed",
+      "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1413",
+      "name": "Fosforan diskrobiowy fosforylowany",
+      "status": "allowed",
+      "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1414",
+      "name": "Acetylowany fosforan diskrobiowy",
+      "status": "allowed",
+      "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1420",
+      "name": "Skrobia acetylowana",
+      "status": "allowed",
+      "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1422",
+      "name": "Adypinian diskrobiowy acetylowany",
+      "status": "allowed",
+      "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1440",
+      "name": "Skrobia hydroksypropylowa",
+      "status": "allowed",
+      "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
       "code": "E1442",
       "name": "Skrobia modyfikowana (fosforan diskrobiowy hydroksypropylowy)",
       "status": "allowed",
       "note": "Skrobia modyfikowana fizycznie/chemicznie. UWAGA: nie zweryfikowano pełnego tekstu przepisu dla kategorii 03 (lody jadalne) - potwierdź w bazie dodatków UE (kategoria 03, E1442).",
       "source": "Rozporządzenie (WE) nr 1333/2008"
+    },
+    {
+      "code": "E1450",
+      "name": "Oktenylobursztynian skrobiowo-sodowy",
+      "status": "restricted",
+      "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1451",
+      "name": "Skrobia utleniona acetylowana",
+      "status": "allowed",
+      "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1452",
+      "name": "Oktenylobursztynian skrobiowo-glinowy",
+      "status": "restricted",
+      "note": "Skrobia modyfikowana.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1505",
+      "name": "Cytrynian trietylu",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1518",
+      "name": "Triacetyloglicerol (triacetyna)",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1519",
+      "name": "Alkohol benzylowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1520",
+      "name": "Glikol propylenowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
+    },
+    {
+      "code": "E1521",
+      "name": "Glikol polietylenowy",
+      "status": "restricted",
+      "note": "Dozwolony w wybranych kategoriach lub z limitami.",
+      "source": "Rozporządzenie (WE) nr 1333/2008 (dane ogólne, zweryfikuj w bazie UE)"
     }
   ]
 }
