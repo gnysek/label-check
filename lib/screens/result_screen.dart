@@ -9,6 +9,7 @@ import '../e_groups.dart';
 import '../ingredient_parser.dart';
 import '../limits.dart';
 import '../summary.dart';
+import '../sweeteners.dart';
 import '../scan_store.dart';
 import '../status_style.dart';
 import '../theme.dart';
@@ -580,6 +581,7 @@ class _IngredientCard extends StatelessWidget {
     final emphasised = status == AdditiveStatus.banned;
     final code = i.eNumber ?? info?.code;
     final allergens = detectAllergens(i.name, code: code);
+    final sweet = detectSweet(i.name, code: code);
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
@@ -613,12 +615,17 @@ class _IngredientCard extends StatelessWidget {
                         ),
                       ),
                     ),
-                    if (code != null || allergens.isNotEmpty) ...[
+                    if (code != null || allergens.isNotEmpty || sweet != null) ...[
                       const SizedBox(width: 8),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           if (code != null) _CodeChip(code: code, style: s),
+                          if (sweet != null)
+                            Padding(
+                              padding: const EdgeInsets.only(top: 4),
+                              child: _SweetChip(kind: sweet),
+                            ),
                           for (final a in allergens)
                             Padding(
                               padding: const EdgeInsets.only(top: 4),
@@ -868,6 +875,42 @@ class _SummaryCard extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _SweetChip extends StatelessWidget {
+  const _SweetChip({required this.kind});
+
+  final SweetKind kind;
+
+  @override
+  Widget build(BuildContext context) {
+    const fg = Color(0xFF8A2D5B);
+    return Tooltip(
+      message: kind == SweetKind.sugar
+          ? 'Cukier lub syrop cukrowy'
+          : 'Substancja słodząca (słodzik)',
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+        decoration: BoxDecoration(
+          color: const Color(0xFFFCE4EF),
+          borderRadius: BorderRadius.circular(999),
+          border: Border.all(color: const Color(0xFFEFB3D0)),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(kind.icon, size: 14, color: fg),
+            const SizedBox(width: 4),
+            Text(
+              kind.label,
+              style: const TextStyle(
+                  fontSize: 12, fontWeight: FontWeight.w600, color: fg),
+            ),
+          ],
+        ),
       ),
     );
   }

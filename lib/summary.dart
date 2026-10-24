@@ -2,6 +2,7 @@ import 'additive_db.dart';
 import 'allergens.dart';
 import 'checker.dart';
 import 'limits.dart';
+import 'sweeteners.dart';
 
 enum Mark { ok, bad, unsure, warn }
 
@@ -130,6 +131,26 @@ List<SummaryRow> buildSummary(List<IngredientCheck> checks, String rawText) {
           Mark.ok, 'Alergeny', 'Nie wykryto po nazwach składników.')
       : SummaryRow(Mark.warn, 'Alergeny',
           allergens.map((a) => a.label).join(', ')));
+
+  // --- Cukry i słodziki ---
+  final sugars = <String>[];
+  final sweeteners = <String>[];
+  for (final c in checks) {
+    final k = detectSweet(c.ingredient.name,
+        code: c.ingredient.eNumber ?? c.info?.code);
+    if (k == SweetKind.sugar) sugars.add(c.ingredient.name);
+    if (k == SweetKind.sweetener) sweeteners.add(c.ingredient.name);
+  }
+  if (sugars.isNotEmpty || sweeteners.isNotEmpty) {
+    final parts = <String>[];
+    if (sugars.isNotEmpty) parts.add('cukry: ${sugars.join(', ')}');
+    if (sweeteners.isNotEmpty) parts.add('słodziki: ${sweeteners.join(', ')}');
+    var text = parts.join('; ');
+    if (sugars.length >= 3) {
+      text += '. Cukier pod ${sugars.length} nazwami.';
+    }
+    rows.add(SummaryRow(Mark.warn, 'Cukry i słodziki', text));
+  }
 
   // --- Wymagane ostrzeżenia na etykiecie ---
   final reqs = <SummaryRow>[];
