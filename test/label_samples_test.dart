@@ -104,4 +104,23 @@ void main() {
     expect(c.firstWhere((x) => x.ingredient.name == 'zerwień buraczana').approximate, isTrue);
     expect(c.firstWhere((x) => x.ingredient.name == 'lecytyny z S01').approximate, isFalse);
   });
+
+  test('słownik poprawia literówki OCR w zwykłych składnikach', () {
+    final db = AdditiveDatabase.fromJsonString(_json, dictionary: const [
+      'mąka sojowa',
+      'proszek',
+      'tłuszczowych',
+      'olej słonecznikowy',
+      'koncentrat soku',
+    ]);
+    expect(db.correctText('maka SOJOWA'), 'mąka SOJOWA');
+    expect(db.correctText('prosSzek'), 'proszek');
+    expect(db.correctText('thuszczowych'), 'tłuszczowych');
+    expect(db.correctText('olej sloneczmikowy'), 'olej słonecznikowy');
+    // nieznane słowo zostaje bez zmian
+    expect(db.correctText('Spirulina platensis'), 'Spirulina platensis');
+    final c = LabelChecker(db).check(parser.parse('Składniki: prosSzek, woda'));
+    expect(c.first.ingredient.name, 'proszek');
+    expect(c.first.ingredient.rawName, 'prosSzek');
+  });
 }

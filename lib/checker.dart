@@ -25,7 +25,17 @@ class LabelChecker {
   List<IngredientCheck> check(List<Ingredient> ingredients) =>
       [for (final i in ingredients) _check(i)];
 
-  IngredientCheck _check(Ingredient i) {
+  IngredientCheck _check(Ingredient original) {
+    final fixedName = db.correctText(original.name);
+    final i = fixedName == original.name
+        ? original
+        : Ingredient(
+            name: fixedName,
+            eNumber: original.eNumber,
+            percent: original.percent,
+            function: original.function,
+            rawName: original.name,
+          );
     final code = i.eNumber;
     if (code == null) {
       // Etykiety często podają nazwę ("cytryniany sodu") bez numeru E.

@@ -5,6 +5,7 @@ class Ingredient {
     this.eNumber,
     this.percent,
     this.function,
+    this.rawName,
   });
 
   /// Nazwa składnika po oczyszczeniu (np. "mąka pszenna").
@@ -18,6 +19,9 @@ class Ingredient {
 
   /// Funkcja technologiczna podana na etykiecie (np. "barwnik", "regulator kwasowości").
   final String? function;
+
+  /// Nazwa tak jak odczytał OCR, jeśli została poprawiona słownikiem.
+  final String? rawName;
 
   @override
   String toString() => 'Ingredient($name, e: $eNumber, %: $percent, fn: $function)';

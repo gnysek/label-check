@@ -619,6 +619,15 @@ class _IngredientCard extends StatelessWidget {
                       ),
                     ),
                   ),
+                if (i.rawName != null)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 4),
+                    child: Text(
+                      'Poprawiono z odczytu: ${i.rawName}',
+                      style: const TextStyle(
+                          fontSize: 13, color: AppColors.muted),
+                    ),
+                  ),
                 if (check.approximate)
                   const Padding(
                     padding: EdgeInsets.only(top: 4),

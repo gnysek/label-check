@@ -23,6 +23,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/additives.json
+    - assets/ingredients.txt
 
 # Ikona aplikacji (cytryna z lupą). Poważna wersja czeka w assets/icon/icon_serious.svg.
 flutter_launcher_icons:

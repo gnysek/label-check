@@ -130,6 +130,91 @@ class AdditiveDatabase {
     return prev[b.length];
   }
 
+  // --- Słownik słów do poprawiania literówek OCR (assets/ingredients.txt). ---
+  final Map<String, String> _words = {};
+  bool _wordsReady = false;
+
+  static final RegExp _wordRe = RegExp(r'[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+');
+
+  /// Małe litery bez polskich znaków (bez poprawek cyfr).
+  static String fold(String s) {
+    const from = 'ąćęłńóśźż';
+    const to = 'acelnoszz';
+    final b = StringBuffer();
+    for (final ch in s.toLowerCase().split('')) {
+      final i = from.indexOf(ch);
+      b.write(i >= 0 ? to[i] : ch);
+    }
+    return b.toString();
+  }
+
+  /// Dodaje frazy (z pliku słownika) oraz nazwy i aliasy dodatków jako znane słowa.
+  void loadDictionary(Iterable<String> phrases) {
+    void addPhrase(String p) {
+      for (final m in _wordRe.allMatches(p)) {
+        final w = m.group(0)!.toLowerCase();
+        if (w.length < 3) continue;
+        final k = fold(w);
+        // Wersja z polskimi znakami wygrywa z gołą.
+        if (!_words.containsKey(k) || (_words[k] == k && w != k)) {
+          _words[k] = w;
+        }
+      }
+    }
+
+    for (final line in phrases) {
+      final t = line.trim();
+      if (t.isEmpty || t.startsWith('#')) continue;
+      addPhrase(t);
+    }
+    for (final i in _byCode.values) {
+      addPhrase(i.name);
+      for (final a in i.aliases) {
+        addPhrase(a);
+      }
+    }
+    _wordsReady = true;
+  }
+
+  String _restyle(String original, String canon) {
+    if (original.length > 1 && original == original.toUpperCase()) {
+      return canon.toUpperCase();
+    }
+    final first = original[0];
+    if (first == first.toUpperCase() && first != first.toLowerCase() &&
+        original.substring(1) == original.substring(1).toLowerCase()) {
+      return canon[0].toUpperCase() + canon.substring(1);
+    }
+    return canon;
+  }
+
+  String _correctWord(String w) {
+    if (w.length < 4) return w;
+    final k = fold(w);
+    final exact = _words[k];
+    if (exact != null) {
+      return w.toLowerCase() == exact ? w : _restyle(w, exact);
+    }
+    if (w.length < 5) return w;
+    String? best;
+    var ambiguous = false;
+    for (final e in _words.entries) {
+      if ((e.key.length - k.length).abs() > 1 || e.key.length < 5) continue;
+      if (_distance(k, e.key) != 1) continue;
+      if (best != null && best != e.value) ambiguous = true;
+      best = e.value;
+    }
+    if (best == null || ambiguous) return w;
+    return _restyle(w, best);
+  }
+
+  /// Poprawia literówki OCR słowo po słowie (np. "prosSzek" -> "proszek",
+  /// "maka" -> "mąka"). Bez słownika zwraca tekst bez zmian.
+  String correctText(String text) {
+    if (!_wordsReady) return text;
+    return text.replaceAllMapped(_wordRe, (m) => _correctWord(m.group(0)!));
+  }
+
   /// Dodatek podany nazwą zamiast numeru E (np. "cytryniany sodu").
   AdditiveInfo? lookupByName(String name) => matchByName(name)?.info;
 
@@ -162,17 +247,24 @@ class AdditiveDatabase {
     return (info: found.first, exact: false);
   }
 
-  factory AdditiveDatabase.fromJsonString(String source) {
+  factory AdditiveDatabase.fromJsonString(String source,
+      {Iterable<String>? dictionary}) {
     final data = jsonDecode(source) as Map<String, dynamic>;
     final meta = data['meta'] as Map<String, dynamic>?;
     final items = (data['additives'] as List).map((e) => AdditiveInfo.fromJson(
         e as Map<String, dynamic>,
         defaultPlNote: meta?['defaultPlNote'] as String?));
-    return AdditiveDatabase(items, isSample: meta?['sample'] == true);
+    final db = AdditiveDatabase(items, isSample: meta?['sample'] == true);
+    if (dictionary != null) db.loadDictionary(dictionary);
+    return db;
   }
 
   static Future<AdditiveDatabase> loadAsset(
       [String path = 'assets/additives.json']) async {
-    return AdditiveDatabase.fromJsonString(await rootBundle.loadString(path));
+    final dict = await rootBundle.loadString('assets/ingredients.txt');
+    return AdditiveDatabase.fromJsonString(
+      await rootBundle.loadString(path),
+      dictionary: dict.split('\n'),
+    );
   }
 }

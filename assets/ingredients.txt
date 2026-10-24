@@ -1,0 +1,614 @@
+# Słownik typowych słów z list składników (poprawia literówki OCR). Jedna fraza na linię.
+woda
+woda mineralna
+woda źródlana
+cukier
+cukier trzcinowy
+cukier brązowy
+cukier puder
+cukier waniliowy
+syrop glukozowy
+syrop glukozowo-fruktozowy
+syrop fruktozowy
+syrop cukrowy
+syrop z agawy
+syrop klonowy
+syrop ryżowy
+glukoza
+fruktoza
+dekstroza
+sacharoza
+laktoza
+maltoza
+maltodekstryna
+trehaloza
+miód
+melasa
+karmel
+słód jęczmienny
+ekstrakt słodu jęczmiennego
+sól
+sól morska
+sól kamienna
+sól jodowana
+sól kuchenna
+pieprz
+pieprz czarny
+pieprz biały
+papryka
+papryka słodka
+papryka ostra
+chili
+cynamon
+wanilia
+wanilina
+kakao
+kakao w proszku
+masa kakaowa
+masło kakaowe
+czekolada
+czekolada mleczna
+czekolada gorzka
+polewa czekoladowa
+oliwa
+oliwa z oliwek
+olej
+olej rzepakowy
+olej słonecznikowy
+olej palmowy
+olej kokosowy
+olej sojowy
+olej kukurydziany
+olej lniany
+olej sezamowy
+olej palmowy utwardzony
+olej roślinny
+oleje roślinne
+tłuszcz
+tłuszcz palmowy
+tłuszcz roślinny
+tłuszcz mleczny
+tłuszcz kokosowy
+tłuszcz utwardzony
+tłuszcze roślinne
+masło
+masło klarowane
+margaryna
+smalec
+łój
+śmietana
+śmietanka
+mleko
+mleko pełne
+mleko odtłuszczone
+mleko w proszku
+mleko skondensowane
+mleko zagęszczone
+mleko sojowe
+mleko kokosowe
+serwatka
+serwatka w proszku
+białka mleka
+białko mleka
+kazeina
+kazeinian
+ser
+ser żółty
+ser twarogowy
+twaróg
+jogurt
+kefir
+maślanka
+laktoza
+jaja
+jajka
+jaja w proszku
+żółtko
+białko jaja
+białko jaj
+jaja całe
+mąka
+mąka pszenna
+mąka żytnia
+mąka kukurydziana
+mąka ryżowa
+mąka owsiana
+mąka sojowa
+mąka jęczmienna
+mąka orkiszowa
+mąka gryczana
+mąka migdałowa
+mąka kokosowa
+mąka ziemniaczana
+skrobia
+skrobia kukurydziana
+skrobia ziemniaczana
+skrobia pszenna
+skrobia modyfikowana
+skrobia ryżowa
+skrobia tapiokowa
+semolina
+kasza
+kasza manna
+kasza gryczana
+kasza jaglana
+kasza jęczmienna
+płatki
+płatki owsiane
+płatki kukurydziane
+płatki ryżowe
+otręby
+otręby pszenne
+otręby owsiane
+błonnik
+błonnik pszenny
+błonnik owsiany
+błonnik jabłkowy
+błonnik cytrusowy
+ryż
+ryż biały
+ryż brązowy
+kukurydza
+pszenica
+żyto
+jęczmień
+owies
+orkisz
+gryka
+proso
+komosa ryżowa
+amarantus
+len
+siemię lniane
+sezam
+mak
+słonecznik
+nasiona słonecznika
+pestki dyni
+chia
+nasiona chia
+orzechy
+orzechy laskowe
+orzechy włoskie
+orzechy ziemne
+orzeszki ziemne
+orzechy nerkowca
+orzechy pistacjowe
+migdały
+pistacje
+kokos
+wiórki kokosowe
+soja
+soja w proszku
+białko sojowe
+białko grochu
+białko pszenne
+białko roślinne
+białko zwierzęce
+białko hydrolizowane
+gluten
+gluten pszenny
+groch
+fasola
+soczewica
+ciecierzyca
+ziemniaki
+ziemniak
+batat
+marchew
+marchew czarna
+koncentrat z marchwi czarnej
+cebula
+cebula suszona
+czosnek
+czosnek granulowany
+pietruszka
+seler
+por
+pomidor
+pomidory
+koncentrat pomidorowy
+przecier pomidorowy
+passata
+papryka czerwona
+ogórek
+ogórki
+kapusta
+kapusta kiszona
+burak
+buraki
+szpinak
+brokuł
+kalafior
+dynia
+cukinia
+grzyby
+pieczarki
+oliwki
+kapary
+imbir
+kurkuma
+kminek
+kmin rzymski
+majeranek
+oregano
+bazylia
+tymianek
+rozmaryn
+natka pietruszki
+koperek
+liść laurowy
+ziele angielskie
+gałka muszkatołowa
+goździki
+kolendra
+musztarda
+ocet
+ocet spirytusowy
+ocet winny
+ocet jabłkowy
+ocet balsamiczny
+sok
+sok jabłkowy
+sok pomarańczowy
+sok cytrynowy
+sok z cytryny
+sok z limonki
+sok z marchwi
+sok z buraka
+sok z czerwonych winogron
+sok z porzeczki
+sok owocowy
+sok warzywny
+koncentrat soku
+koncentrat soku z jabłek
+koncentrat soku z winogron
+koncentrat soku z czerwonych winogron
+koncentrat soku z cytryny
+koncentrat soku z marchwi
+sok zagęszczony
+sok z koncentratu
+puree
+puree owocowe
+przecier owocowy
+mus owocowy
+jabłko
+jabłka
+gruszka
+śliwka
+śliwki
+morela
+brzoskwinia
+wiśnia
+wiśnie
+czereśnia
+truskawka
+truskawki
+malina
+maliny
+borówka
+jagody
+porzeczka
+czarna porzeczka
+winogrona
+winogron
+granat
+pomarańcza
+cytryna
+limonka
+grejpfrut
+banan
+ananas
+mango
+kiwi
+daktyle
+figi
+rodzynki
+żurawina
+skórka pomarańczowa
+skórka cytrynowa
+owoce
+owoce suszone
+warzywa
+warzywa suszone
+mięso
+mięso wieprzowe
+mięso wołowe
+mięso drobiowe
+mięso z kurczaka
+mięso mechanicznie oddzielone
+wieprzowina
+wołowina
+drób
+kurczak
+indyk
+szynka
+boczek
+słonina
+skóra wieprzowa
+tłuszcz wieprzowy
+tłuszcz drobiowy
+kiełbasa
+parówki
+ryba
+ryby
+łosoś
+tuńczyk
+makrela
+śledź
+dorsz
+filety rybne
+olej rybny
+krewetki
+skorupiaki
+mięczaki
+żelatyna
+żelatyna wieprzowa
+żelatyna wołowa
+agar
+pektyna
+pektyny
+guma
+guma guar
+guma ksantanowa
+guma arabska
+guma celulozowa
+guma gellan
+karagen
+alginian
+alginiany
+lecytyna
+lecytyny
+lecytyna sojowa
+lecytyna słonecznikowa
+lecytyny z soi
+emulgator
+emulgatory
+stabilizator
+stabilizatory
+regulator
+regulatory
+regulator kwasowości
+regulatory kwasowości
+kwas
+kwasy
+kwas cytrynowy
+kwas jabłkowy
+kwas mlekowy
+kwas octowy
+kwas askorbinowy
+kwas pantotenowy
+kwas foliowy
+kwas winowy
+kwas fosforowy
+barwnik
+barwniki
+barwnik spożywczy
+konserwant
+konserwanty
+przeciwutleniacz
+przeciwutleniacze
+przeciwzbrylające
+substancja
+substancje
+substancja słodząca
+substancje słodzące
+substancja konserwująca
+substancje konserwujące
+substancja zagęszczająca
+substancje zagęszczające
+zagęszczacz
+zagęszczacze
+wzmacniacz smaku
+wzmacniacze smaku
+środek
+środek spulchniający
+środki spulchniające
+środek przeciwzbrylający
+środki przeciwzbrylające
+środek żelujący
+środek do traktowania mąki
+spulchniacz
+spulchniacze
+proszek
+proszek do pieczenia
+proszek ze spiruliny
+proszek ze spirulina platensis
+spirulina
+chlorella
+ekstrakt
+ekstrakty
+ekstrakt drożdżowy
+ekstrakt z rozmarynu
+ekstrakt z zielonej herbaty
+ekstrakt z kawy
+ekstrakt waniliowy
+drożdże
+drożdże piekarskie
+drożdże suszone
+aromat
+aromaty
+aromat naturalny
+aromaty naturalne
+aromat identyczny z naturalnym
+aromat dymu wędzarniczego
+dym wędzarniczy
+przyprawy
+przyprawa
+mieszanka przypraw
+naturalne aromaty
+zioła
+kawa
+kawa rozpuszczalna
+herbata
+guarana
+kofeina
+tauryna
+inozytol
+glukuronolakton
+witaminy
+witamina
+witamina a
+witamina c
+witamina d
+witamina e
+witamina k
+witamina b1
+witamina b2
+witamina b6
+witamina b12
+niacyna
+ryboflawina
+tiamina
+biotyna
+kwas foliowy
+minerały
+sole mineralne
+magnez
+wapń
+żelazo
+cynk
+jod
+potas
+sód
+selen
+fosfor
+mleczan
+cytrynian
+cytryniany sodu
+cytrynian sodu
+fosforan
+fosforany
+węglan
+węglany
+wodorowęglan sodu
+wodorowęglan amonu
+dwutlenek węgla
+dwutlenek siarki
+siarczyny
+azotyn sodu
+sól peklująca
+mieszanka peklująca
+glukonolakton
+karmel
+karmel zwykły
+karmel amoniakalny
+dekstryna
+dekstryny
+poliole
+sorbitol
+mannitol
+ksylitol
+erytrytol
+sukraloza
+aspartam
+acesulfam k
+stewia
+glikozydy stewiolowe
+sacharyna
+cyklaminian
+cyklaminiany
+inulina
+oligofruktoza
+polidekstroza
+węglowodany
+białko
+tłuszcze
+mono- i diglicerydy kwasów tłuszczowych
+estry sacharozy i kwasów tłuszczowych
+kwasy tłuszczowe
+kwasów tłuszczowych
+estry
+mono
+diglicerydy
+diglicerydy kwasów tłuszczowych
+tłuszczowych
+tłuszczowe
+enzymatycznie
+hydrolizowana
+hydrolizowane
+hydrolizowany
+częściowo
+całkowicie
+utwardzony
+utwardzone
+odtłuszczone
+odtłuszczony
+suszone
+suszony
+suszona
+zagęszczone
+zagęszczony
+zagęszczona
+skondensowane
+rozpuszczalna
+rozpuszczalny
+modyfikowana
+modyfikowane
+modyfikowany
+naturalny
+naturalne
+naturalna
+pasteryzowany
+pasteryzowane
+sterylizowane
+liofilizowane
+liofilizowany
+mielone
+mielony
+mielona
+prażone
+prażony
+wędzone
+wędzony
+fermentowane
+fermentowany
+ekologiczny
+ekologiczne
+słodzone
+słodzony
+kwaśne
+kwaśny
+może zawierać
+mogą zawierać
+ślady
+zawiera
+pochodzenia
+roślinnego
+zwierzęcego
+czerwonych
+czerwona
+czerwony
+zielonych
+zielone
+zielony
+białe
+biały
+czarne
+czarny
+czarnej
+żółte
+żółty
+słodka
+słodki
+ostra
+ostry
+z
+ze
+oraz
+buraczana
+czerwień buraczana
+antocyjany
+antocyjan
+karoteny
+beta-karoten
+beta karoten
+kurkumina
+ryboflawiny
+likopen
+luteina
+chlorofil
+chlorofile
+szafran
+annato
+koszenila
