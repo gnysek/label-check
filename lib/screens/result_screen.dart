@@ -6,6 +6,7 @@ import '../additive_db.dart';
 import '../allergens.dart';
 import '../checker.dart';
 import '../ingredient_parser.dart';
+import '../limits.dart';
 import '../scan_store.dart';
 import '../status_style.dart';
 import '../theme.dart';
@@ -154,6 +155,11 @@ class _ResultScreenState extends State<ResultScreen> {
           if (widget.db.isSample) ...[
             const SizedBox(height: 12),
             const SampleBanner(),
+          ],
+          for (final n in evaluateLimits(
+              [for (final c in _checks) c.ingredient], _controller.text)) ...[
+            const SizedBox(height: 12),
+            _LimitsCard(note: n),
           ],
           const SizedBox(height: 12),
           _OcrTextCard(
@@ -723,6 +729,53 @@ class _AllergenChip extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// Karta z limitami i wymaganiami (np. dla kofeiny).
+class _LimitsCard extends StatelessWidget {
+  const _LimitsCard({required this.note});
+
+  final LimitNote note;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppColors.border),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.rule, color: AppColors.green),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  note.title,
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.w700),
+                ),
+              ),
+            ],
+          ),
+          for (final l in note.lines)
+            Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: Text(l, style: const TextStyle(fontSize: 14, height: 20 / 14)),
+            ),
+          const SizedBox(height: 10),
+          Text(
+            'Podstawa: ${note.source}',
+            style: const TextStyle(fontSize: 12, color: AppColors.muted),
+          ),
+        ],
       ),
     );
   }
