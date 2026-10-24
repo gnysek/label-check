@@ -7,6 +7,7 @@ import '../allergens.dart';
 import '../checker.dart';
 import '../ingredient_parser.dart';
 import '../limits.dart';
+import '../summary.dart';
 import '../scan_store.dart';
 import '../status_style.dart';
 import '../theme.dart';
@@ -156,6 +157,8 @@ class _ResultScreenState extends State<ResultScreen> {
             const SizedBox(height: 12),
             const SampleBanner(),
           ],
+          const SizedBox(height: 12),
+          _SummaryCard(rows: buildSummary(_checks, _controller.text)),
           for (final n in evaluateLimits(
               [for (final c in _checks) c.ingredient], _controller.text)) ...[
             const SizedBox(height: 12),
@@ -781,6 +784,75 @@ class _LimitsCard extends StatelessWidget {
           Text(
             'Podstawa: ${note.source}',
             style: const TextStyle(fontSize: 12, color: AppColors.muted),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Podsumowanie produktu: dieta, alergeny, wymagane ostrzeżenia.
+class _SummaryCard extends StatelessWidget {
+  const _SummaryCard({required this.rows});
+
+  final List<SummaryRow> rows;
+
+  static (IconData, Color) _look(Mark m) => switch (m) {
+        Mark.ok => (Icons.check_circle_outline, const Color(0xFF1B6B2F)),
+        Mark.bad => (Icons.cancel_outlined, const Color(0xFFB3261E)),
+        Mark.unsure => (Icons.help_outline, const Color(0xFF475569)),
+        Mark.warn => (Icons.warning_amber_rounded, const Color(0xFF9A4A00)),
+      };
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppColors.border),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            'Podsumowanie',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
+          ),
+          for (final r in rows)
+            Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(_look(r.mark).$1, size: 20, color: _look(r.mark).$2),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Text.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                            text: '${r.label}: ',
+                            style: const TextStyle(fontWeight: FontWeight.w700),
+                          ),
+                          TextSpan(text: r.text),
+                        ],
+                      ),
+                      style: const TextStyle(fontSize: 14, height: 20 / 14),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          const SizedBox(height: 10),
+          const Text(
+            'Ocena wg samego składu i odczytanego tekstu, orientacyjnie.',
+            style: TextStyle(
+              fontSize: 11.5,
+              fontStyle: FontStyle.italic,
+              color: AppColors.muted,
+            ),
           ),
         ],
       ),

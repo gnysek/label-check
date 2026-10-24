@@ -34,26 +34,9 @@ List<LimitNote> evaluateLimits(List<Ingredient> ingredients, String rawText) {
 
   final caffeine = ingredients.where((i) => _fold(i.name).startsWith('kofein'));
   if (caffeine.isNotEmpty) {
-    // Zawartość: najpierw jawne "32 mg/100 ml", inaczej z procentu (1 ml ~ 1 g).
-    double? mgPer100;
-    String? how;
-    final explicit = RegExp(
-      r'(\d+(?:[.,]\d+)?)\s*mg\s*/\s*100\s*ml',
-      caseSensitive: false,
-    ).firstMatch(rawText);
-    if (explicit != null) {
-      mgPer100 = _num(explicit.group(1)!);
-      how = 'z etykiety';
-    } else {
-      final pct = caffeine.first.percent;
-      if (pct != null) {
-        final p = _num(pct.replaceAll('%', ''));
-        if (p != null) {
-          mgPer100 = p * 1000;
-          how = 'z podanego procentu, zakładając gęstość 1 g/ml';
-        }
-      }
-    }
+    final amount = caffeineAmount(ingredients, rawText);
+    final mgPer100 = amount.mgPer100;
+    final how = amount.how;
 
     final lines = <String>[];
     if (mgPer100 != null) {
@@ -106,4 +89,30 @@ List<LimitNote> evaluateLimits(List<Ingredient> ingredients, String rawText) {
     ));
   }
   return notes;
+}
+
+/// Zawartość kofeiny w mg/100 ml: najpierw jawne "32 mg/100 ml" z etykiety,
+/// inaczej z procentu (zakładając, że 1 ml waży 1 g).
+({double? mgPer100, String? how}) caffeineAmount(
+    List<Ingredient> ingredients, String rawText) {
+  final caffeine = ingredients.where((i) => _fold(i.name).startsWith('kofein'));
+  if (caffeine.isEmpty) return (mgPer100: null, how: null);
+  final explicit = RegExp(
+    r'(\d+(?:[.,]\d+)?)\s*mg\s*/\s*100\s*ml',
+    caseSensitive: false,
+  ).firstMatch(rawText);
+  if (explicit != null) {
+    return (mgPer100: _num(explicit.group(1)!), how: 'z etykiety');
+  }
+  final pct = caffeine.first.percent;
+  if (pct != null) {
+    final p = _num(pct.replaceAll('%', ''));
+    if (p != null) {
+      return (
+        mgPer100: p * 1000,
+        how: 'z podanego procentu, zakładając gęstość 1 g/ml',
+      );
+    }
+  }
+  return (mgPer100: null, how: null);
 }
