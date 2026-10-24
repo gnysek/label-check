@@ -8,6 +8,7 @@ import '../theme.dart';
 import 'additives_screen.dart';
 import 'history_screen.dart';
 import 'result_screen.dart';
+import 'straighten_screen.dart';
 
 /// Ekran startowy: zdjęcie etykiety -> OCR -> ekran wyniku.
 class ScanScreen extends StatefulWidget {
@@ -45,9 +46,16 @@ class _ScanScreenState extends State<ScanScreen> {
     String? text;
     try {
       final picked = await _picker.pickImage(source: source, imageQuality: 90);
-      if (picked == null) return;
-      if (mounted) setState(() => _busy = true);
-      final input = InputImage.fromFilePath(picked.path);
+      if (picked == null || !mounted) return;
+      // Podgląd: wyprostowanie / trapez / rozwinięcie puszki przed odczytem.
+      final path = await Navigator.of(context).push<String>(
+        MaterialPageRoute<String>(
+          builder: (_) => StraightenScreen(imagePath: picked.path),
+        ),
+      );
+      if (path == null || !mounted) return;
+      setState(() => _busy = true);
+      final input = InputImage.fromFilePath(path);
       final result = await _recognizer.processImage(input);
       text = result.text;
     } catch (e) {
