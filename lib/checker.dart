@@ -1,5 +1,6 @@
 import 'additive_db.dart';
 import 'ingredient_parser.dart';
+import 'latin_names.dart';
 
 /// Wynik sprawdzenia jednego składnika.
 class IngredientCheck {
@@ -25,7 +26,18 @@ class LabelChecker {
   List<IngredientCheck> check(List<Ingredient> ingredients) =>
       [for (final i in ingredients) _check(i)];
 
-  IngredientCheck _check(Ingredient original) {
+  IngredientCheck _check(Ingredient raw) {
+    // Łacińska nazwa gatunkowa -> polska (+ łacińska w nawiasie przy wyświetlaniu).
+    final lat = latinize(raw.name);
+    final original = lat == null
+        ? raw
+        : Ingredient(
+            name: lat.name,
+            eNumber: raw.eNumber,
+            percent: raw.percent,
+            function: raw.function,
+            latin: lat.latin,
+          );
     final fixedName = db.correctText(original.name);
     final i = fixedName == original.name
         ? original
@@ -35,6 +47,7 @@ class LabelChecker {
             percent: original.percent,
             function: original.function,
             rawName: original.name,
+            latin: original.latin,
           );
     final code = i.eNumber;
     if (code == null) {
@@ -55,6 +68,7 @@ class LabelChecker {
               percent: i.percent,
               function: i.function,
               rawName: i.rawName ?? i.name,
+              latin: i.latin,
             )
           : i;
       return IngredientCheck(shownIngredient, m.info.status,

@@ -6,6 +6,7 @@ class Ingredient {
     this.percent,
     this.function,
     this.rawName,
+    this.latin,
   });
 
   /// Nazwa składnika po oczyszczeniu (np. "mąka pszenna").
@@ -22,6 +23,9 @@ class Ingredient {
 
   /// Nazwa tak jak odczytał OCR, jeśli została poprawiona słownikiem.
   final String? rawName;
+
+  /// Łacińska nazwa gatunkowa, jeśli etykieta ją podawała (nazwa jest już po polsku).
+  final String? latin;
 
   @override
   String toString() => 'Ingredient($name, e: $eNumber, %: $percent, fn: $function)';

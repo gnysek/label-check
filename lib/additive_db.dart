@@ -228,6 +228,23 @@ class AdditiveDatabase {
   /// Poprawia literówki OCR słowo po słowie (np. "prosSzek" -> "proszek",
   /// "maka" -> "mąka"). Bez słownika zwraca tekst bez zmian.
   String correctText(String text) {
+    // "2e" -> "ze": cyfra pomylona z literą w krótkim słowie funkcyjnym.
+    text = text.replaceAllMapped(RegExp(r'(?<![\w])(\d)([a-zA-Z])(?![\w])'), (m) {
+      const map = {'2': 'z', '0': 'o', '1': 'l', '5': 's'};
+      final w = (map[m.group(1)] ?? '') + m.group(2)!.toLowerCase();
+      const words = {'ze', 'od', 'oraz', 'na', 'do', 'po', 'lub', 'lm'};
+      return words.contains(w) ? w : m.group(0)!;
+    });
+    // Jeśli słowo zaczyna się małą literą, w środku nie ma wielkich ("sacharOzy").
+    text = text.replaceAllMapped(_wordRe, (m) {
+      final w = m.group(0)!;
+      final first = w[0];
+      if (first == first.toLowerCase() && first != first.toUpperCase() &&
+          w != w.toLowerCase()) {
+        return w.toLowerCase();
+      }
+      return w;
+    });
     if (!_wordsReady) return text;
     return text.replaceAllMapped(_wordRe, (m) => _correctWord(m.group(0)!));
   }

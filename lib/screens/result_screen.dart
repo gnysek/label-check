@@ -607,11 +607,24 @@ class _IngredientCard extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: Text(
-                        i.name,
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600,
+                      child: Text.rich(
+                        TextSpan(
+                          text: i.name,
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                          ),
+                          children: [
+                            if (i.latin != null)
+                              TextSpan(
+                                text: ' (${i.latin})',
+                                style: const TextStyle(
+                                  fontSize: 13,
+                                  fontStyle: FontStyle.italic,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                          ],
                         ),
                       ),
                     ),
