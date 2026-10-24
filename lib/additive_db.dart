@@ -63,10 +63,15 @@ class AdditiveDatabase {
         _byName = {
           for (final i in items)
             for (final n in [i.name, ...i.aliases]) normalizeName(n): i,
+        },
+        _displayByKey = {
+          for (final i in items)
+            for (final n in [i.name, ...i.aliases]) normalizeName(n): n,
         };
 
   final Map<String, AdditiveInfo> _byCode;
   final Map<String, AdditiveInfo> _byName;
+  final Map<String, String> _displayByKey;
 
   /// True, jeśli baza zawiera tylko dane przykładowe.
   final bool isSample;
@@ -232,14 +237,17 @@ class AdditiveDatabase {
 
   /// Dopasowanie po nazwie; `exact` = false, gdy użyto przybliżenia
   /// (literówki z OCR, np. "zerwień buraczana").
-  ({AdditiveInfo info, bool exact})? matchByName(String name) {
+  ({AdditiveInfo info, bool exact, String matched})? matchByName(String name) {
     final key = normalizeName(name);
     final direct = _byName[key];
-    if (direct != null) return (info: direct, exact: true);
+    if (direct != null) {
+      return (info: direct, exact: true, matched: _displayByKey[key] ?? name);
+    }
     if (key.length < 7) return null;
     final maxDist = key.length >= 14 ? 2 : 1;
     var best = maxDist + 1;
     final found = <AdditiveInfo>{};
+    String? foundKey;
     for (final e in _byName.entries) {
       if (e.key.length < 7 || (e.key.length - key.length).abs() > maxDist) {
         continue;
@@ -251,12 +259,17 @@ class AdditiveDatabase {
         found
           ..clear()
           ..add(e.value);
+        foundKey = e.key;
       } else if (d == best) {
         found.add(e.value);
       }
     }
     if (found.length != 1) return null;
-    return (info: found.first, exact: false);
+    return (
+      info: found.first,
+      exact: false,
+      matched: _displayByKey[foundKey] ?? found.first.name,
+    );
   }
 
   factory AdditiveDatabase.fromJsonString(String source,
