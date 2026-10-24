@@ -189,6 +189,20 @@ class IngredientParser {
       p = p.replaceFirst(pm.group(0)!, ' ');
     }
 
+    // Etykiety podają procent z co najwyżej dwoma miejscami po przecinku, więc
+    // liczba typu 6,976 to prawie na pewno "6,97%" z błędnie odczytanym znakiem %
+    // (OCR czyta % jako 6). Jednostki wagi (g, mg, ml...) wyłączamy.
+    if (percent == null) {
+      final m = RegExp(
+        r'(?<![\d.,])(\d{1,3})[.,](\d{2})6(?![\d])(?!\s*(?:g|mg|kg|ml|l|kcal|kj)\b)',
+        caseSensitive: false,
+      ).firstMatch(p);
+      if (m != null) {
+        percent = '${m.group(1)}.${m.group(2)}%';
+        p = p.replaceFirst(m.group(0)!, ' ');
+      }
+    }
+
     String? eNumber;
     final em = _eNumber.firstMatch(p);
     if (em != null) {

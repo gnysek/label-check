@@ -123,4 +123,13 @@ void main() {
     expect(c.first.ingredient.name, 'proszek');
     expect(c.first.ingredient.rawName, 'prosSzek');
   });
+
+  test('trzy miejsca po przecinku kończące się na 6 to procent z błędnym %', () {
+    final r = parser.parse(
+        'Składniki: koncentrat soku z winogron (6,976), cukier, sól 0,5 g, woda 12,346 g');
+    expect(r[0].percent, '6.97%');
+    expect(r[0].name, 'koncentrat soku z winogron');
+    expect(r[2].percent, isNull);
+    expect(r[3].percent, isNull);
+  });
 }
