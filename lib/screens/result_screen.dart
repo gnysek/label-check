@@ -643,7 +643,10 @@ class _IngredientCard extends StatelessWidget {
                     child: Text(
                       'Poprawiono z odczytu: ${i.rawName}',
                       style: const TextStyle(
-                          fontSize: 13, color: AppColors.muted),
+                        fontSize: 11.5,
+                        fontStyle: FontStyle.italic,
+                        color: AppColors.muted,
+                      ),
                     ),
                   ),
                 if (check.approximate)
@@ -651,7 +654,11 @@ class _IngredientCard extends StatelessWidget {
                     padding: EdgeInsets.only(top: 4),
                     child: Text(
                       'Dopasowano z przybliżeniem (możliwa literówka z OCR), sprawdź pisownię.',
-                      style: TextStyle(fontSize: 13, color: AppColors.muted),
+                      style: TextStyle(
+                        fontSize: 11.5,
+                        fontStyle: FontStyle.italic,
+                        color: AppColors.muted,
+                      ),
                     ),
                   ),
                 if (i.percent != null)
