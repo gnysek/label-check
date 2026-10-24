@@ -91,11 +91,18 @@ class _StraightenScreenState extends State<StraightenScreen> {
         .clamp(0.0, img.height.toDouble());
     setState(() {
       final next = List<Pt>.of(_pts);
+      // Wygięcie góry i dołu (odległość środkowej kropki od cięciwy) zostaje
+      // zachowane, gdy ktoś rusza rogiem - kropki podążają za rogami.
+      Pt chordMid(Pt a, Pt b) => Pt((a.x + b.x) / 2, (a.y + b.y) / 2);
+      final topBulge = _pts[4] - chordMid(_pts[0], _pts[1]);
+      final botBulge = _pts[5] - chordMid(_pts[3], _pts[2]);
       next[i] = Pt(x, y);
-      // Środkowe kropki podążają za rogami, gdy ktoś rusza rogiem.
       if (i < 4 && _mode == modeCylinder) {
-        next[4] = Pt((next[0].x + next[1].x) / 2, (next[0].y + next[1].y) / 2);
-        next[5] = Pt((next[3].x + next[2].x) / 2, (next[3].y + next[2].y) / 2);
+        final w = _img?.width.toDouble() ?? x;
+        final h = _img?.height.toDouble() ?? y;
+        Pt clampPt(Pt p) => Pt(p.x.clamp(0.0, w), p.y.clamp(0.0, h));
+        next[4] = clampPt(chordMid(next[0], next[1]) + topBulge);
+        next[5] = clampPt(chordMid(next[3], next[2]) + botBulge);
       }
       _pts = next;
     });
