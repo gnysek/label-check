@@ -612,3 +612,270 @@ chlorofile
 szafran
 annato
 koszenila
+# --- rozszerzenie: przyprawy i zioła ---
+kardamon
+anyż
+szałwia
+mięta
+lubczyk
+cząber
+estragon
+chrzan
+papryczka chili
+cayenne
+curry
+papryka wędzona
+sól czosnkowa
+cebula w proszku
+czosnek w proszku
+pieprz cayenne
+pieprz ziołowy
+ziele
+zioła prowansalskie
+kminek rzymski
+kolendra mielona
+imbir mielony
+przyprawa do mięsa
+sos sojowy
+sos worcestershire
+sos pomidorowy
+keczup
+majonez
+musztarda sarepska
+ocet ryżowy
+# --- zboża, pieczywo, makarony ---
+chleb
+bułka tarta
+bułka
+bagietka
+makaron
+makaron jajeczny
+makaron pszenny
+kluski
+ciasto
+ciasto francuskie
+ciasto drożdżowe
+mąka chlebowa
+mąka tortowa
+mąka pełnoziarnista
+mąka żytnia razowa
+ziarna
+ziarna zbóż
+ziarno
+zboża
+zboże
+płatki jaglane
+płatki jęczmienne
+musli
+granola
+chrupki
+ekstrudat
+ekstrudaty
+semolina pszenna
+kasza kuskus
+kuskus
+bulgur
+tapioka
+# --- mięso i wędliny ---
+polędwica
+kabanos
+mortadela
+salami
+pasztet
+szynka wieprzowa
+szynka drobiowa
+mięso wołowe
+mięso z indyka
+mięso kurczaka
+wątroba
+podroby
+tłuszcz zwierzęcy
+kość
+kości
+białko zwierzęce
+żelatyna spożywcza
+ryba
+rybie
+ryby
+tuńczyk
+łosoś
+śledź
+sardynki
+anchois
+paluszki rybne
+# --- nabiał i jaja ---
+mleko krowie
+mleko w proszku odtłuszczone
+mleko pełne w proszku
+mleko zagęszczone słodzone
+śmietana
+śmietana kwaśna
+masło
+serek
+serek homogenizowany
+ser mozzarella
+mozzarella
+parmezan
+cheddar
+mascarpone
+ricotta
+feta
+ser topiony
+ser twarogowy
+jogurt naturalny
+białko mleka krowiego
+koncentrat białka mleka
+proszek mleczny
+laktoza
+żółtka
+jaja pasteryzowane
+jajo
+masa jajowa
+# --- tłuszcze ---
+olej arachidowy
+olej z pestek winogron
+olej słonecznikowy rafinowany
+oliwa z oliwek extra virgin
+olej rzepakowy rafinowany
+tłuszcz palmowy
+tłuszcz kakaowy
+masło shea
+masło klarowane
+# --- słodycze, desery, cukier ---
+czekolada biała
+masa czekoladowa
+krem
+nadzienie
+nadzienie owocowe
+wafel
+wafle
+herbatnik
+ciastko
+ciastka
+biszkopt
+marcepan
+nugat
+dżem
+powidła
+galaretka
+żelki
+cukierki
+lukier
+polewa
+posypka
+cukier płynny
+cukier inwertowany
+syrop inwertowany
+syrop skrobiowy
+karmel
+karmelowy
+glukoza krystaliczna
+# --- owoce, warzywa, orzechy ---
+borówka amerykańska
+jagoda
+jagody
+jeżyna
+agrest
+śliwka suszona
+rodzynek
+rodzynki
+morele suszone
+daktyl
+migdał
+migdały
+orzech
+orzechy
+orzech włoski
+orzech laskowy
+orzech nerkowca
+orzech pekan
+orzech brazylijski
+orzech makadamia
+orzeszki
+pistacja
+kasztan
+awokado
+oliwka
+oliwki zielone
+kukurydza cukrowa
+groszek
+fasolka
+fasola biała
+ciecierzyca
+soczewica czerwona
+bób
+papryka czerwona suszona
+pomidory suszone
+rzodkiewka
+szparagi
+seler naciowy
+szczypiorek
+kiełki
+algi
+wodorosty
+nori
+agar
+# --- napoje i konserwanty zwyczajowe ---
+napój
+napój gazowany
+napój energetyczny
+napój energetyzujący
+nektar
+woda gazowana
+woda niegazowana
+woda z gazem
+woda do rozpuszczania
+dwutlenek węgla
+dwutlenek siarki
+kofeina naturalna
+ekstrakt z guarany
+ekstrakt z zielonej kawy
+ekstrakt z żeń-szenia
+żeń-szeń
+l-karnityna
+karnityna
+inozytol
+kreatyna
+beta-alanina
+tauryna
+glukuronolakton
+# --- ogólne słowa z etykiet ---
+produkt
+zawiera
+może
+mogą
+śladowe
+ilości
+pochodzi
+mieszanka
+mieszanina
+koncentrat
+koncentraty
+wyciąg
+wyciągi
+preparat
+preparaty
+przetworzony
+przetworzone
+rafinowany
+rafinowane
+nierafinowany
+tłoczony
+tłoczone
+świeży
+świeże
+mrożony
+mrożone
+gotowany
+gotowane
+smażony
+smażone
+pieczony
+pieczone
+pasta
+pasty
+sproszkowany
+sproszkowane
+płynny
+płynne
+stały

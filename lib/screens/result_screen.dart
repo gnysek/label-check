@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../additive_db.dart';
 import '../allergens.dart';
 import '../checker.dart';
+import '../e_groups.dart';
 import '../ingredient_parser.dart';
 import '../limits.dart';
 import '../summary.dart';
@@ -645,6 +646,18 @@ class _IngredientCard extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 4),
                     child: Text(
                       'Poprawiono z odczytu: ${i.rawName}',
+                      style: const TextStyle(
+                        fontSize: 11.5,
+                        fontStyle: FontStyle.italic,
+                        color: AppColors.muted,
+                      ),
+                    ),
+                  ),
+                if (code != null && groupForCode(code) != null)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 4),
+                    child: Text(
+                      'Grupa wg numeru (orientacyjnie): ${groupForCode(code)}',
                       style: const TextStyle(
                         fontSize: 11.5,
                         fontStyle: FontStyle.italic,
