@@ -20,7 +20,10 @@ String _fold(String s) => AdditiveDatabase.fold(s);
 double? _num(String s) => double.tryParse(s.replaceAll(',', '.'));
 
 String _fmt(double v) {
-  final r = v.roundToDouble() == v ? v.toStringAsFixed(0) : v.toStringAsFixed(1);
+  final rounded = (v * 10).round() / 10;
+  final r = rounded == rounded.roundToDouble()
+      ? rounded.toStringAsFixed(0)
+      : rounded.toStringAsFixed(1);
   return r.replaceAll('.', ',');
 }
 
