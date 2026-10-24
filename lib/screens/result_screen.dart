@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../additive_db.dart';
+import '../allergens.dart';
 import '../checker.dart';
 import '../ingredient_parser.dart';
 import '../scan_store.dart';
@@ -568,6 +569,7 @@ class _IngredientCard extends StatelessWidget {
     final note = info?.note;
     final emphasised = status == AdditiveStatus.banned;
     final code = i.eNumber ?? info?.code;
+    final allergens = detectAllergens(i.name, code: code);
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
@@ -601,9 +603,19 @@ class _IngredientCard extends StatelessWidget {
                         ),
                       ),
                     ),
-                    if (code != null) ...[
+                    if (code != null || allergens.isNotEmpty) ...[
                       const SizedBox(width: 8),
-                      _CodeChip(code: code, style: s),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          if (code != null) _CodeChip(code: code, style: s),
+                          for (final a in allergens)
+                            Padding(
+                              padding: const EdgeInsets.only(top: 4),
+                              child: _AllergenChip(allergen: a),
+                            ),
+                        ],
+                      ),
                     ],
                   ],
                 ),
@@ -674,6 +686,43 @@ class _IngredientCard extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// Mała plakietka alergenu obok numeru E.
+class _AllergenChip extends StatelessWidget {
+  const _AllergenChip({required this.allergen});
+
+  final Allergen allergen;
+
+  @override
+  Widget build(BuildContext context) {
+    return Tooltip(
+      message: 'Możliwy alergen: ${allergen.label}',
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+        decoration: BoxDecoration(
+          color: const Color(0xFFFFF3E0),
+          borderRadius: BorderRadius.circular(999),
+          border: Border.all(color: const Color(0xFFF2C98F)),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(allergen.icon, size: 14, color: const Color(0xFF9A4A00)),
+            const SizedBox(width: 4),
+            Text(
+              allergen.label,
+              style: const TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+                color: Color(0xFF9A4A00),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
