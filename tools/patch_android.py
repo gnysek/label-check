@@ -52,6 +52,41 @@ if "proguard-rules.pro" not in text:
     )
     path.write_text(text)
 
+# Stały podpis: wymuś keystore z ~/.android/debug.keystore (przywracany z cache CI).
+# Bez tego Gradle potrafi wygenerować nowy klucz przy każdym buildzie, a Android
+# odrzuca aktualizację podpisaną innym kluczem.
+text = path.read_text()
+if "labelcheck-signing" not in text:
+    if path.suffix == ".kts":
+        block = (
+            "// labelcheck-signing\n"
+            "    signingConfigs {\n"
+            '        getByName("debug") {\n'
+            '            storeFile = file(System.getProperty("user.home") + "/.android/debug.keystore")\n'
+            '            storePassword = "android"\n'
+            '            keyAlias = "androiddebugkey"\n'
+            '            keyPassword = "android"\n'
+            "        }\n"
+            "    }\n\n    "
+        )
+    else:
+        block = (
+            "// labelcheck-signing\n"
+            "    signingConfigs {\n"
+            "        debug {\n"
+            "            storeFile file(System.getProperty('user.home') + '/.android/debug.keystore')\n"
+            "            storePassword 'android'\n"
+            "            keyAlias 'androiddebugkey'\n"
+            "            keyPassword 'android'\n"
+            "        }\n"
+            "    }\n\n    "
+        )
+    m = re.search(r"^(\s*)buildTypes\s*\{", text, flags=re.M)
+    if not m:
+        raise SystemExit("Brak bloku buildTypes w " + str(path))
+    text = text[: m.start(1) + len(m.group(1))] + block + text[m.start(1) + len(m.group(1)) :]
+    path.write_text(text)
+
 # Szybszy build: równoległość i cache Gradle.
 props = pathlib.Path("android/gradle.properties")
 if props.exists():
