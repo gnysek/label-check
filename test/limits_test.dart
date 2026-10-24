@@ -22,7 +22,7 @@ Składniki: woda, cukier, 0,35 % tauryna, 0,03 % kofeina, aromat. Najlepiej spo�
 
   test('bez kofeiny brak notatek, z procentu przy braku mg/100 ml', () {
     expect(evaluateLimits(parser.parse('Składniki: woda, cukier'), 'woda'), isEmpty);
-    final raw = 'Składniki: woda, 0,03 % kofeina';
+    const raw = 'Składniki: woda, 0,03 % kofeina';
     final n = evaluateLimits(parser.parse(raw), raw);
     expect(n.first.lines.first, contains('30 mg/100 ml'));
   });
