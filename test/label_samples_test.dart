@@ -98,11 +98,13 @@ void main() {
     expect(c.map((x) => x.ingredient.name).last, 'aromaty');
     AdditiveInfo? info(String n) =>
         c.firstWhere((x) => x.ingredient.name == n).info;
-    expect(info('lecytyny z S01')?.code, 'E322');
-    expect(info('zerwień buraczana')?.code, 'E162');
-    expect(info('mono- i diglicerydy kwasów thuszczowych')?.code, 'E471');
-    expect(c.firstWhere((x) => x.ingredient.name == 'zerwień buraczana').approximate, isTrue);
-    expect(c.firstWhere((x) => x.ingredient.name == 'lecytyny z S01').approximate, isFalse);
+    expect(info('lecytyny z soi')?.code, 'E322');
+    expect(info('czerwień buraczana')?.code, 'E162');
+    expect(info('mono- i diglicerydy kwasów tłuszczowych')?.code, 'E471');
+    final beet = c.firstWhere((x) => x.ingredient.name == 'czerwień buraczana');
+    expect(beet.approximate, isTrue);
+    expect(beet.ingredient.rawName, 'zerwień buraczana');
+    expect(c.firstWhere((x) => x.ingredient.name == 'lecytyny z soi').approximate, isFalse);
   });
 
   test('słownik poprawia literówki OCR w zwykłych składnikach', () {

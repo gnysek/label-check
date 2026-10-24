@@ -41,21 +41,24 @@ class LabelChecker {
       // Etykiety często podają nazwę ("cytryniany sodu") bez numeru E.
       final m = db.matchByName(i.name);
       if (m == null) return IngredientCheck(i, null);
-      if (m.exact) return IngredientCheck(i, m.info.status, info: m.info);
-      // Dopasowanie przybliżone: pokaż poprawną nazwę, a odczyt zachowaj.
+      // Pokaż poprawną nazwę dodatku (np. "kKWas cytrynowy" -> "kwas
+      // cytrynowy"), a odczyt z OCR zachowaj w rawName.
       var shown = m.matched;
       if (shown.length > 1 && shown[1] == shown[1].toLowerCase()) {
         shown = shown[0].toLowerCase() + shown.substring(1);
       }
-      final fixed = Ingredient(
-        name: shown,
-        eNumber: i.eNumber,
-        percent: i.percent,
-        function: i.function,
-        rawName: i.rawName ?? i.name,
-      );
-      return IngredientCheck(fixed, m.info.status,
-          info: m.info, approximate: true);
+      final changed = shown.toLowerCase() != i.name.toLowerCase();
+      final shownIngredient = changed
+          ? Ingredient(
+              name: shown,
+              eNumber: i.eNumber,
+              percent: i.percent,
+              function: i.function,
+              rawName: i.rawName ?? i.name,
+            )
+          : i;
+      return IngredientCheck(shownIngredient, m.info.status,
+          info: m.info, approximate: !m.exact);
     }
     final info = db.lookup(code);
     return IngredientCheck(
