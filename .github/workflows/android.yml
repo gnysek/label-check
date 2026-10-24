@@ -109,6 +109,17 @@ jobs:
             echo "::error title=Build log::${msg}"
           fi
 
+      # Diagnostyka aktualizacji: odcisk podpisu i versionCode w adnotacji.
+      - name: Report APK signature
+        if: always()
+        run: |
+          apk=build/app/outputs/flutter-apk/app-release.apk
+          [ -f "$apk" ] || exit 0
+          bt=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          sig=$("$bt/apksigner" verify --print-certs "$apk" 2>&1 | grep -i "SHA-256" | head -1)
+          ver=$("$bt/aapt2" dump badging "$apk" 2>&1 | grep -o "versionCode='[0-9]*'" | head -1)
+          echo "::notice title=APK::${sig} ${ver}"
+
       - uses: actions/upload-artifact@v4
         with:
           name: label-check-apk
