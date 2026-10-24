@@ -132,4 +132,14 @@ void main() {
     expect(r[2].percent, isNull);
     expect(r[3].percent, isNull);
   });
+
+  test('brak nagłówka: wybiera zdanie z listą, odcina zniekształconą stopkę', () {
+    final r = parser.parse(
+        'Npój energetyzujący gazowany z tauryną i kofeiną. Produkt pasteryzowany. Woda, cukier, kwas cytrynowy, dwutlenek węgla, tauryna. Chronić przed słońcem');
+    expect(r.map((i) => i.name),
+        ['Woda', 'cukier', 'kwas cytrynowy', 'dwutlenek węgla', 'tauryna']);
+    final f = parser.parse(
+        'Sktadniki: woda, aromaty, witamina B6, Mo hethowvwatw chłodnym, zacienionym miejscu');
+    expect(f.last.name, 'witamina B6');
+  });
 }

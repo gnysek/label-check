@@ -196,11 +196,23 @@ class AdditiveDatabase {
       return w.toLowerCase() == exact ? w : _restyle(w, exact);
     }
     if (w.length < 5) return w;
+    // Dłuższe wyrazy ("substangia" -> "substancja") tolerują dwie pomyłki.
+    final maxDist = k.length >= 9 ? 2 : 1;
     String? best;
     var ambiguous = false;
+    var bestDist = maxDist + 1;
     for (final e in _words.entries) {
-      if ((e.key.length - k.length).abs() > 1 || e.key.length < 5) continue;
-      if (_distance(k, e.key) != 1) continue;
+      if ((e.key.length - k.length).abs() > maxDist || e.key.length < 5) {
+        continue;
+      }
+      final d = _distance(k, e.key);
+      if (d == 0 || d > maxDist) continue;
+      if (d > bestDist) continue;
+      if (d < bestDist) {
+        bestDist = d;
+        best = null;
+        ambiguous = false;
+      }
       if (best != null && best != e.value) ambiguous = true;
       best = e.value;
     }

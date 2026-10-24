@@ -47,10 +47,35 @@ class IngredientParser {
     caseSensitive: false,
   );
 
+  // Także zniekształcone nagłówki z OCR ("Sktadniki:", "Składnild:").
   static final RegExp _headerAnywhere = RegExp(
-    r'sk[łl]adniki\s*:\s*',
+    r'(?:^|\s)s[^\s:]{0,3}adni[^\s:]{0,4}\s*[:;]\s*',
     caseSensitive: false,
   );
+
+  // Słowa ze stopki/opisu, które nie są składnikami (po złożeniu do ASCII).
+  static const Set<String> _footerWords = {
+    'miejscu', 'chlodnym', 'zacienionym', 'suchym', 'przechowywac', 'chronic',
+    'temperaturze', 'opakowaniu', 'partii', 'numer', 'spodzie', 'puszki',
+    'najlepiej', 'spozyc', 'koncem', 'zamrazac', 'producent', 'wyprodukowano',
+    'alkoholem', 'mieszac', 'dzieci', 'ciazy', 'karmiacych', 'jankowice',
+    'poznanska', 'data',
+  };
+
+  static String _fold(String s) {
+    const from = 'ąćęłńóśźż';
+    const to = 'acelnoszz';
+    final b = StringBuffer();
+    for (final ch in s.toLowerCase().split('')) {
+      final i = from.indexOf(ch);
+      b.write(i >= 0 ? to[i] : ch);
+    }
+    return b.toString();
+  }
+
+  bool _isFooter(String name) => RegExp(r'[a-z]+')
+      .allMatches(_fold(name))
+      .any((m) => _footerWords.contains(m.group(0)));
 
   // E102, E 102, e-102, E160a, E 160 a, E1520
   static final RegExp _eNumber = RegExp(
@@ -89,6 +114,15 @@ class IngredientParser {
       text = text.substring(anywhere.end);
     } else {
       text = text.replaceFirst(_header, '');
+      // Brak (rozpoznanego) nagłówka: weź zdanie, które wygląda jak lista,
+      // czyli ma najwięcej przecinków/średników.
+      final sentences =
+          text.split(RegExp(r'\.\s+(?=[A-ZĄĆĘŁŃÓŚŹŻ*"])'));
+      if (sentences.length > 1) {
+        int commas(String s) => RegExp('[,;]').allMatches(s).length;
+        final best = sentences.reduce((a, b) => commas(b) > commas(a) ? b : a);
+        if (commas(best) >= 2) text = best;
+      }
     }
     // Rozmyte zdjęcie: OCR często czyta przecinek jako kropkę ("woda. cukier").
     // Kropka po literze, po której zaczyna się mała litera lub cyfra, to
@@ -111,6 +145,10 @@ class IngredientParser {
     final result = <Ingredient>[];
     for (final part in parts) {
       result.addAll(_parseExpanded(part));
+    }
+    // Zniekształcona stopka bez kropki ("... B12 Mo hethowvwatw chłodnym").
+    while (result.isNotEmpty && _isFooter(result.last.name)) {
+      result.removeLast();
     }
     return result;
   }
