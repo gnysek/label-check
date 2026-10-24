@@ -135,6 +135,12 @@ void main() {
     expect(r[3].percent, isNull);
   });
 
+  test('procent odczytany jako "96" (6,9796 -> 6,97%)', () {
+    final r = parser.parse('Składniki: woda, koncentrat soku z winogron (6,9796), olej');
+    expect(r[1].percent, '6.97%');
+    expect(r[1].name, 'koncentrat soku z winogron');
+  });
+
   test('brak nagłówka: wybiera zdanie z listą, odcina zniekształconą stopkę', () {
     final r = parser.parse(
         'Npój energetyzujący gazowany z tauryną i kofeiną. Produkt pasteryzowany. Woda, cukier, kwas cytrynowy, dwutlenek węgla, tauryna. Chronić przed słońcem');

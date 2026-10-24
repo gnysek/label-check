@@ -358,6 +358,13 @@ class _EditorPainter extends CustomPainter {
       path.lineTo(bl.dx, bl.dy);
       path.close();
     }
+    // Przyciemnij wszystko poza zaznaczonym obszarem.
+    final outer = Path()
+      ..addRect(Rect.fromLTWH(offset.dx, offset.dy, w * scale, h * scale));
+    canvas.drawPath(
+      Path.combine(PathOperation.difference, outer, path),
+      Paint()..color = const Color(0x99000000),
+    );
     canvas.drawPath(path, line);
 
     final active = mode == modeCylinder ? 6 : 4;

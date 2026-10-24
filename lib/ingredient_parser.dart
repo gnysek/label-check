@@ -232,7 +232,7 @@ class IngredientParser {
     // (OCR czyta % jako 6). Jednostki wagi (g, mg, ml...) wyłączamy.
     if (percent == null) {
       final m = RegExp(
-        r'(?<![\d.,])(\d{1,3})[.,](\d{2})6(?![\d])(?!\s*(?:g|mg|kg|ml|l|kcal|kj)\b)',
+        r'(?<![\d.,])(\d{1,3})[.,](\d{2})9?6(?![\d])(?!\s*(?:g|mg|kg|ml|l|kcal|kj)\b)',
         caseSensitive: false,
       ).firstMatch(p);
       if (m != null) {
