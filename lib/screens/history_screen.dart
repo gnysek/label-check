@@ -106,10 +106,11 @@ class _HistoryScreenState extends State<HistoryScreen> {
 
   Widget _tile(SavedScan scan) {
     final parsed = _parser.parse(scan.text);
-    final worst = worstStatus(LabelChecker(widget.db).check(parsed));
-    final title = parsed.isEmpty
+    final checks = LabelChecker(widget.db).check(parsed);
+    final worst = worstStatus(checks);
+    final title = checks.isEmpty
         ? 'Pusty skan'
-        : parsed.take(4).map((i) => i.name).join(', ');
+        : checks.take(4).map((c) => c.ingredient.name).join(', ');
     final shape = RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(16),
       side: const BorderSide(color: AppColors.border),

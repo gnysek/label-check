@@ -47,7 +47,7 @@ class LabelChecker {
       if (shown.length > 1 && shown[1] == shown[1].toLowerCase()) {
         shown = shown[0].toLowerCase() + shown.substring(1);
       }
-      final changed = shown.toLowerCase() != i.name.toLowerCase();
+      final changed = shown != i.name;
       final shownIngredient = changed
           ? Ingredient(
               name: shown,

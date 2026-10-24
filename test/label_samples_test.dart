@@ -141,6 +141,13 @@ void main() {
     expect(r[1].name, 'koncentrat soku z winogron');
   });
 
+  test('mieszana wielkość liter w słowie jest poprawiana', () {
+    final db = AdditiveDatabase.fromJsonString(
+        '{"additives":[{"code":"E473","name":"Estry sacharozy i kwasów tłuszczowych","status":"restricted","source":"t"}]}',
+        dictionary: ['estry sacharozy i kwasów tłuszczowych']);
+    expect(db.correctText('estry sacharOzy i kwasów'), contains('sacharozy'));
+  });
+
   test('brak nagłówka: wybiera zdanie z listą, odcina zniekształconą stopkę', () {
     final r = parser.parse(
         'Npój energetyzujący gazowany z tauryną i kofeiną. Produkt pasteryzowany. Woda, cukier, kwas cytrynowy, dwutlenek węgla, tauryna. Chronić przed słońcem');

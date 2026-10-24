@@ -198,7 +198,7 @@ class AdditiveDatabase {
     final k = fold(w);
     final exact = _words[k];
     if (exact != null) {
-      return w.toLowerCase() == exact ? w : _restyle(w, exact);
+      return _restyle(w, exact);
     }
     if (w.length < 5) return w;
     // Dłuższe wyrazy ("substangia" -> "substancja") tolerują dwie pomyłki.
