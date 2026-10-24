@@ -902,7 +902,10 @@ class _SweetChip extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(kind.icon, size: 14, color: fg),
+            if (kind == SweetKind.sugar)
+              const SizedBox(width: 16, height: 14, child: _SugarCubes(color: fg))
+            else
+              Icon(kind.icon, size: 14, color: fg),
             const SizedBox(width: 4),
             Text(
               kind.label,
@@ -914,4 +917,45 @@ class _SweetChip extends StatelessWidget {
       ),
     );
   }
+}
+
+/// Trzy kostki cukru (dwie na dole, jedna na górze).
+class _SugarCubes extends StatelessWidget {
+  const _SugarCubes({required this.color});
+
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) =>
+      CustomPaint(painter: _SugarCubesPainter(color));
+}
+
+class _SugarCubesPainter extends CustomPainter {
+  _SugarCubesPainter(this.color);
+
+  final Color color;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final side = size.width * 0.48;
+    final stroke = Paint()
+      ..color = color
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.3;
+    final fill = Paint()..color = Colors.white;
+    void cube(double x, double y) {
+      final r = RRect.fromRectAndRadius(
+          Rect.fromLTWH(x, y, side, side), const Radius.circular(1.5));
+      canvas.drawRRect(r, fill);
+      canvas.drawRRect(r, stroke);
+    }
+
+    final bottom = size.height - side - 0.7;
+    cube(0.7, bottom);
+    cube(size.width - side - 0.7, bottom);
+    cube((size.width - side) / 2, bottom - side + 0.4);
+  }
+
+  @override
+  bool shouldRepaint(covariant _SugarCubesPainter old) => old.color != color;
 }
